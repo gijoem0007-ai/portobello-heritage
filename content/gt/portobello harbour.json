@@ -1,0 +1,45 @@
+{
+ "file": "portobello harbour.htm",
+ "variant": "desktop (desktop text=3133 imgs=0; mobile text=3133 imgs=1)",
+ "title": "Portobello Heritage Trust, portobello harbour",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 286.0,
+   "left": 40.0,
+   "paras": [
+    "Harbour Walls",
+    "The archaeological dig to excavate the harbour walls beneath the former fairground site on the promenade proved a popular attraction. Martin Cook, AOC Archaeology Group, said that hundreds of people walking past had watched the daily progress of the dig and the emergence of the exposed walls through the fence. The archaeological works were commissioned by MNM Developments Ltd as part of the residential development of the site. The exposed walls outlined the area of the harbour and the finds of stoneware and creamware provided evidence of what was produced at the potteries in the area. It is believed that approximately another two metres of wall still lie under the ground, but the archaeologists were unable to dig deeper because they had reached the water table. The results of the excavation have been recorded to provide a permanent record of the dig.",
+    "Click here for Harbour Map",
+    "In his Annals of Duddingston and Portobello, William Baird writes ‘To meet the requirements of the growing trade of the place, and with an enterprise truly commendable, betokening his entire confidence in its ultimate success, Mr Jameson, about the year 1787-88, projected the erection of a harbour at the mouth of the Figgate Burn. The import of coals and whiteware clay from Cornwall for the potteries, and other commodities, was now considerable, while the export of bricks, tiles, etc., was also increasing, so that the prospects of a harbour being needful and likely to pay the outlay necessary for its completion was not unreasonable. Hitherto sloops, brigs, and other small craft, bringing or taking away goods, had to be beached in order to receive or discharge their cargoes, which on an unprotected shore was not always possible or safe … The contractor employed by him was Mr Alexander Robertson, the lessee of Joppa Quarry, who undertook to cart to the harbour a thousand loads of boulder stones, in addition to the large squared stones necessary for facing the pier and harbour walls … The pier, with a rough kind of breakwater in front of it, on the north side of the harbour, was carried out in a northerly direction, directly from the foot of Pipe Street. The entrance to the harbour was narrow and the basin small, and certainly it would not accommodate more than three or four small vessels at a time. On the east was the “harbour green” which did duty as a dock-yard. On the west side the sea wall took a turn from facing the north inwards toward the burn, and was built in a substantial manner; but years of neglect, and repeated inroads of the sea, soon told upon the work.’",
+    "Sections of the walls will be covered again by an underground car park, which will preserve them, and it is hoped that some of the stonework that has to be removed will be incorporated into the landscaping round the development. Even if we cannot see the walls, we now have evidence of their existence and where they lie, which is surely a positive outcome for the history of our community.",
+    "Margaret Munro.",
+    "(A version of this article first appeared in the Portobello Reporter)",
+    "Click here to see information poster",
+    "Click here for photogallery"
+   ],
+   "signoffs": [
+    "Margaret Munro."
+   ]
+  },
+  {
+   "type": "button",
+   "href": "heritage.htm",
+   "label": "Back to Heritage Page",
+   "top": 1165.0,
+   "left": 266.0
+  }
+ ],
+ "links": [
+  "index_htm_files/Harbour%20Map.jpg",
+  "index_htm_files/Poster%20re%20Excavations.pdf",
+  "index_htm_files/excavation%20photogallery.pdf",
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm"
+ ]
+}

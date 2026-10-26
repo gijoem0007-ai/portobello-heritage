@@ -1,0 +1,106 @@
+{
+ "file": "index.htm",
+ "variant": "desktop (desktop text=1523 imgs=3; mobile text=1524 imgs=4)",
+ "title": "Portobello Heritage Trust",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 266.0,
+   "left": 80.0,
+   "paras": [
+    "Portobello Heritage Trust Welcome"
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40841.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 334.0,
+   "left": 113.0,
+   "w": 533.0,
+   "h": 342.0
+  },
+  {
+   "type": "text",
+   "top": 721.0,
+   "left": 31.0,
+   "paras": [
+    "Portobello was Scotland’s most popular seaside resort. However, it was established as a manufacturing centre at the end of the 18 th century and became a fashionable watering place and then a favourite holiday destination of the working-classes during the 19 th century. Industry and leisure existed side by side until the mid-twentieth century. It might have been an incongruous mix but it has produced a unique heritage.",
+    "The trust has the following aims:",
+    "To record, promote and encourage the conservation, protection and enhancement of the historical, architectural and landscape heritage within Portobello and its environs. To advance knowledge and understanding of all aspects of Portobello’s cultural and industrial heritage within the community and beyond.",
+    "These are wide ranging aims including, as they do, all of Portobello’s cultural, historical, architectural and landscape heritage."
+   ]
+  },
+  {
+   "type": "text",
+   "top": 1072.0,
+   "left": 55.0,
+   "paras": [
+    "We are currently uploading details of our archive to ehive, an online catalogue. To complete this task will take a considerable amount of time. Please do check our catalogue frequently as new items are regularly added"
+   ]
+  },
+  {
+   "type": "button",
+   "href": "https://ehive.com/collections/204361/portobello-heritage-trust-portobello-edinburgh",
+   "label": "Catalogue",
+   "top": 1109.0,
+   "left": 0
+  },
+  {
+   "type": "text",
+   "top": 1239.0,
+   "left": 153.0,
+   "paras": [
+    "Join the Portobello Heritage Trust and receive our newsletter, be the first to hear about forthcoming events, and help us look after the history and character of Portobello for future generations."
+   ]
+  },
+  {
+   "type": "button",
+   "href": "#",
+   "label": "Membership Application Form",
+   "top": 1300.0,
+   "left": 247.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/39938.png",
+   "alt": "",
+   "rollover": false,
+   "top": 1386.0,
+   "left": 635.0,
+   "w": 72.0,
+   "h": 67.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/39937.png",
+   "alt": "",
+   "rollover": false,
+   "top": 1393.0,
+   "left": 40.0,
+   "w": 59.0,
+   "h": 59.0
+  },
+  {
+   "type": "text",
+   "top": 1396.0,
+   "left": 175.0,
+   "paras": [
+    "Portobello Heritage Trust is a company limited by guarantee. Registered in Scotland (Reg. No. 369226) Registered Office: 16 Bellfield Lane, Edinburgh, EH15 2BL Scottish Charity No. 042138"
+   ]
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm",
+  "https://www.facebook.com/portyhistory",
+  "https://twitter.com/portyhistory",
+  "https://ehive.com/collections/204361/portobello-heritage-trust-portobello-edinburgh",
+  "#"
+ ]
+}

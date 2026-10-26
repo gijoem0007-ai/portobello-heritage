@@ -1,0 +1,457 @@
+/* Portobello Heritage Trust — first-pass static clone
+   Recreated design system (colours/fonts sampled from the live Xara-built site).
+   NOTE: Google-hosted "Open Sans" + "Lora" substitute for the site's Verdana/Georgia/Open Sans
+   mix. Since 2026-09-25 all images and PDFs are the real originals from the Xara Apr 2026
+   export (images/pht/, files/), replacing the earlier re-captured screenshots. */
+
+:root{
+  --page-bg:        #FFFFDF; /* cream page background */
+  --white:          #FFFFFF;
+  --text:           #182129;
+  --link:           #0000EE;
+  --link-visited:   #561A8B;
+
+  --brand-1:        #B3533F; /* nav / header accent (brick red) */
+  --brand-1-hover:  #C7863F; /* nav hover (burnt orange) */
+  --brand-1-dark:   #5B2217;
+  --brand-1-light:  #D98878;
+
+  --brand-2:        #FE8400; /* orange accent */
+  --brand-3:        #A6C1B4; /* sage */
+  --brand-4:        #367D5B; /* dark green */
+  --brand-5:        #9EACB5; /* blue grey */
+
+  --shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--page-bg);
+  color:var(--text);
+  font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height:1.5;
+}
+
+a{ color:var(--link); text-decoration:underline; }
+a:visited{ color:var(--link-visited); }
+a:hover{ color:var(--brand-1-hover); }
+
+img{ max-width:100%; height:auto; display:block; }
+
+.site-header{
+  max-width:1086px;
+  margin:0 auto;
+}
+.banner{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.main-nav{
+  max-width:1086px;
+  margin:18px auto;
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+  padding:0 16px;
+}
+.main-nav a{
+  display:inline-block;
+  background:linear-gradient(#c56951,var(--brand-1));
+  color:var(--white) !important;
+  text-decoration:none;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-weight:700;
+  font-size:16px;
+  padding:14px 26px;
+  border-radius:6px;
+  box-shadow:var(--shadow);
+  transition:background 0.15s ease;
+}
+.main-nav a:hover, .main-nav a.active{
+  background:linear-gradient(#d9986a,var(--brand-1-hover));
+}
+
+/* mega-menu for Heritage */
+.main-nav .has-flyout{ position:relative; }
+.flyout{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:var(--brand-1);
+  min-width:230px;
+  padding:6px 0;
+  box-shadow:var(--shadow);
+  border-radius:0 0 6px 6px;
+  z-index:50;
+}
+.main-nav .has-flyout:hover .flyout,
+.main-nav .has-flyout:focus-within .flyout{ display:block; }
+.flyout a{
+  display:block;
+  background:none;
+  box-shadow:none;
+  border-radius:0;
+  padding:8px 18px;
+  font-size:14px;
+  font-weight:600;
+  white-space:nowrap;
+}
+.flyout a:hover{ background:var(--brand-1-hover); }
+
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:20px 24px 70px;
+}
+.container.wide{ max-width:1086px; }
+
+h1.page-title{
+  font-family:'Lora', Georgia, 'Times New Roman', serif;
+  font-weight:700;
+  font-size:30px;
+  text-align:center;
+  text-decoration:underline;
+  margin:30px 0 26px;
+}
+h2.section-title{
+  font-family:'Lora', Georgia, serif;
+  font-weight:700;
+  font-size:22px;
+  text-align:center;
+  margin:26px 0 16px;
+}
+h3.byline{
+  font-family:'Lora', Georgia, serif;
+  font-weight:600;
+  font-style:italic;
+  text-align:center;
+  font-size:16px;
+  margin:0 0 20px;
+  font-weight:400;
+}
+
+.article p{
+  font-family:'Lora', Georgia, 'Times New Roman', serif;
+  font-weight:600;
+  font-size:16px;
+  text-align:justify;
+  margin:0 0 18px;
+}
+.article p.center, .container p.center{ text-align:center; }
+.article figure{
+  margin:24px auto;
+  text-align:center;
+  max-width:680px;
+}
+.article figure img{
+  margin:0 auto;
+  box-shadow:var(--shadow);
+}
+.article figcaption{
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size:13px;
+  font-style:italic;
+  color:#444;
+  margin-top:8px;
+}
+
+.plain p{
+  font-family:'Open Sans', Arial, sans-serif;
+  font-weight:400;
+  font-size:15px;
+}
+
+.hero-photo{
+  display:block;
+  margin:10px auto 30px;
+  max-width:600px;
+  box-shadow:var(--shadow);
+}
+
+/* sub-nav buttons used on Heritage landing + sidebar-style pages */
+.subnav{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-width:260px;
+}
+.subnav a{
+  display:block;
+  background:linear-gradient(#c56951,var(--brand-1));
+  color:var(--white);
+  text-decoration:none;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-weight:700;
+  font-size:15px;
+  text-align:center;
+  padding:12px 14px;
+  border-radius:6px;
+  box-shadow:var(--shadow);
+}
+.subnav a:hover{ background:linear-gradient(#d9986a,var(--brand-1-hover)); }
+
+.two-col{
+  display:flex;
+  gap:30px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  max-width:1086px;
+  margin:0 auto;
+  padding:0 24px 60px;
+}
+.two-col .content{ flex:1; min-width:280px; }
+
+.btn{
+  display:inline-block;
+  background:linear-gradient(#c56951,var(--brand-1));
+  color:var(--white) !important;
+  text-decoration:none;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-weight:700;
+  font-size:15px;
+  text-align:center;
+  padding:13px 22px;
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  margin:6px 0;
+}
+.btn:hover{ background:linear-gradient(#d9986a,var(--brand-1-hover)); }
+.btn-row{ text-align:center; margin:30px 0; }
+.btn-row .btn{ margin:0 8px 12px; }
+
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  justify-content:center;
+  margin:20px 0;
+}
+.gallery img{
+  max-width:260px;
+  box-shadow:var(--shadow);
+}
+
+.notice{
+  max-width:700px;
+  margin:20px auto;
+  padding:14px 18px;
+  background:#fff8dd;
+  border:1px dashed var(--brand-2);
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size:13px;
+  color:#5a4600;
+  border-radius:6px;
+}
+
+.site-footer{
+  max-width:1086px;
+  margin:40px auto 0;
+  padding:24px 24px 40px;
+  text-align:center;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size:13px;
+}
+.site-footer .socials{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:18px;
+}
+.site-footer .socials img{ width:48px; height:48px; }
+.site-footer p{ margin:4px 0; font-weight:600; }
+.site-footer .credit{
+  margin-top:20px;
+  font-size:11px;
+  opacity:0.6;
+}
+.site-footer .credit a{ color:inherit; }
+
+@media (max-width:700px){
+  .main-nav a{ padding:10px 16px; font-size:14px; }
+  h1.page-title{ font-size:24px; }
+  .article p{ font-size:15px; }
+  .two-col{ flex-direction:column; }
+}
+
+/* ---- 2026-09-25: layout for content rendered from the ground-truth Xara export ---- */
+.content p, .container > p{ font-size:16px; line-height:1.65; margin:0 0 16px; }
+.gt-figure{ margin:22px 0; text-align:center; }
+.gt-figure img, .gt-row img{ display:inline-block; max-width:100%; height:auto; box-shadow:var(--shadow); }
+.gt-row{ display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start; gap:16px; margin:22px 0; }
+.gt-row a{ display:inline-block; }
+.caption{ text-align:center; font-style:italic; font-size:14px !important; margin-top:-8px !important; }
+h2.gt-sub{ font-size:19px; text-align:left; margin:24px 0 10px; }
+.gt-click a{ font-weight:600; }
+.missing-asset{ color:#8a3b2b; font-size:13px; font-style:italic; }
+.btn-missing{ opacity:.55; cursor:not-allowed; }
+.gt-popups{ border-top:2px solid var(--brand-1-light); margin-top:30px; padding-top:10px; }
+.gt-embeds{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin:24px 0; }
+.gt-embeds .embed{ position:relative; padding-top:56.25%; }
+.gt-embeds iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+.signoff{ text-align:right; font-style:italic; font-weight:600; }
+/* image captions tied to individual images (figure/figcaption) */
+.gt-fig{ display:inline-flex; flex-direction:column; align-items:center; margin:0; vertical-align:top; }
+.gt-fig > a, .gt-fig > img{ display:block; }
+.gt-cap{ margin-top:6px; font-family:'Open Sans', Arial, sans-serif; font-size:12.5px; font-weight:300;
+         font-style:italic; letter-spacing:.02em; line-height:1.35; color:#4a4f55; text-align:center; }
+/* loose single-image captions use the same caption style as tied figcaptions */
+.content p.caption, .container p.caption{ font-family:'Open Sans', Arial, sans-serif; font-size:12.5px !important;
+         font-weight:300; font-style:italic; letter-spacing:.02em; color:#4a4f55; text-align:center; }
+.gt-cap{ font-size:12px; letter-spacing:0; }
+
+/* Side menus (Heritage / Events): vertical buttons with hover flyouts, as in the ground truth */
+.side-menu .sm-item { position: relative; }
+.side-menu .sm-btn { display: block; }
+.side-menu a.sm-btn:not([href]) { cursor: default; }
+.side-menu .sm-flyout {
+  visibility: hidden; opacity: 0; position: absolute; left: 100%; top: 0; z-index: 101;
+  min-width: 220px; white-space: nowrap; background: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18); transition: visibility 300ms, opacity 300ms;
+}
+.side-menu .has-flyout:hover > .sm-flyout,
+.side-menu .has-flyout:focus-within > .sm-flyout { visibility: visible; opacity: 1; }
+.side-menu .sm-flyout a { display: block; text-decoration: none; text-align: left; }
+@media (max-width: 760px) {
+  .side-menu .sm-flyout { position: static; display: none; visibility: visible; opacity: 1;
+                          box-shadow: none; white-space: normal; min-width: 0; }
+  .side-menu .has-flyout:hover > .sm-flyout,
+  .side-menu .has-flyout:focus-within > .sm-flyout { display: block; }
+}
+
+/* Oral History: chapter list with Video Essay / Audio File buttons that open a pop-up player */
+.oh-intro, .content p.oh-intro { text-align: center; font-weight: 700; max-width: 640px;
+  margin: 0 auto 2.2em; text-wrap: pretty; }   /* centred under the title; no one-word last line */
+.oh-speaker { text-align: center; font-size: 1.15em; margin: 0 0 .8em; }
+.oh-chapter { text-align: center; margin: 0 0 1.4em; }
+.oh-chapter h3 { font-weight: 400; text-decoration: underline; font-size: 1.05em; margin: 0 0 .6em; }
+.oh-btns { display: flex; justify-content: center; gap: 10px 36px; flex-wrap: wrap; }
+.oh-btn { position: relative; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
+.oh-btn img { display: block; height: auto; max-width: none; margin: 0; }   /* width: the artwork's own size (inline) */
+.oh-btn .oh-ro { position: absolute; inset: 0; opacity: 0; transition: opacity .15s; }
+.oh-btn:hover .oh-ro, .oh-btn:focus-visible .oh-ro { opacity: 1; }
+.oh-player { width: min(860px, 94vw); padding: 0; border: 0; border-radius: 6px; background: #111;
+             box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+.oh-player::backdrop { background: rgba(0,0,0,.7); }
+.oh-head { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+           padding: 8px 8px 8px 14px; color: #fff; font-size: 14px; }
+.oh-close { border: 0; background: none; color: #fff; font-size: 28px; line-height: 1; cursor: pointer; padding: 0 6px; }
+.oh-frame { position: relative; aspect-ratio: 16 / 9; }
+.oh-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* Photo descriptions shown as a pop-up on hover (or tap / keyboard focus), as in the ground truth */
+.hover-tip { position: relative; display: inline-block; outline: none; }
+.hover-tip::after {
+  content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 8px);
+  transform: translate(-50%, 4px); width: max-content; max-width: 240px; z-index: 50;
+  padding: 7px 10px; border-radius: 5px; background: #3a2a22; color: #fff;
+  font-size: 13px; line-height: 1.35; text-align: center; white-space: normal;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25); pointer-events: none;
+  opacity: 0; visibility: hidden; transition: opacity .15s, transform .15s, visibility .15s;
+}
+.hover-tip:hover::after, .hover-tip:focus-visible::after { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+@media (hover: none) {   /* touch screens: tapping a photo shows its description */
+  .hover-tip:focus::after { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+}
+.hover-tip:focus-visible img { outline: 2px solid #c8874a; outline-offset: 2px; }
+/* "Hover over each Photo to see description." — centred under the page title, larger */
+.content p.gt-hint, p.gt-hint { text-align: center; font-size: 1.3em; font-weight: 600; margin: 0 auto 1.2em; }
+.oh-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+          padding: 24px 40px; color: #fff; font-size: 17px; line-height: 1.5; text-align: center; }
+
+/* Photo galleries (Xara sliders): photos fade one to the next every 4 s, as on the live site */
+.gt-slider { position: relative; width: 100%; margin: 0 auto 1.6em; background: #fff; overflow: hidden;
+             box-shadow: 0 4px 12px rgba(0,0,0,.18); }
+.gt-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .5s ease; background: #fff; }   /* own white panel, as in Xara */
+.gt-slide.on { opacity: 1; }
+.gt-slide img { position: absolute; display: block; max-width: none; margin: 0; object-fit: cover; }
+@media (prefers-reduced-motion: reduce) { .gt-slide { transition: none; } }
+/* a gallery with a caption underneath (Events page) */
+.gt-gallery { margin: 0 0 3.2em; }
+.gt-gallery .gt-slider { margin-bottom: .7em; }
+.gt-gallery figcaption { text-align: center; font-size: 15px; font-weight: 600; color: #4a4f55; }
+
+/* Photos of Coade Stone Pillars: photo grid (descriptions on hover) and zoomable photos */
+.mosaic-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 0 auto 2.4em; max-width: 720px; }
+.mosaic-grid .gt-img { width: 227px; height: auto; margin: 0; box-shadow: 0 3px 8px rgba(0,0,0,.2); }
+.zoom-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px 28px; margin: 0 auto 2em; max-width: 560px; }
+.zoom-tile { margin: 0; width: 240px; max-width: 100%; }
+.zoom-frame { position: relative; width: 100%; aspect-ratio: 3 / 4; overflow: hidden; cursor: zoom-in;
+              background-repeat: no-repeat; background-size: 0 0; box-shadow: 0 3px 8px rgba(0,0,0,.2); outline: none; }
+.zoom-frame img { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; max-width: none; transition: opacity .15s; }
+.zoom-tile.zooming .zoom-frame { background-size: 320% auto; cursor: zoom-out; }   /* 768px photo shown ~3x */
+.zoom-tile.zooming .zoom-frame img { opacity: 0; }
+.zoom-frame:focus-visible { outline: 2px solid #c8874a; outline-offset: 3px; }
+.zoom-tile figcaption { margin-top: .5em; text-align: center; font-size: 14px; font-style: italic; color: #4a4f55; }
+/* a button Xara shows in its inactive (greyed) state: visible, but not a link */
+.btn.btn-inactive { opacity: .45; cursor: default; pointer-events: none; filter: grayscale(.4); }
+
+/* Membership Application Form pop-up (Contact and Home), styled after the ground truth's form card */
+.btn.mf-open { border: 0; cursor: pointer; font: inherit; }
+.mf-dialog { width: min(600px, 94vw); max-height: 92vh; padding: 0; border: 0; border-radius: 8px;
+             background: #fffef2; color: #222; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+.mf-dialog::backdrop { background: rgba(0,0,0,.65); }
+.mf-card { position: relative; padding: 24px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.45; }
+.mf-card h2 { margin: 0 36px 12px 0; font-size: 1.35em; }
+.mf-card h3 { margin: 26px 0 8px; font-size: 1.15em; }
+.mf-card p { margin: 0 0 10px; }
+.mf-close { position: absolute; top: 10px; right: 12px; width: 34px; height: 34px; border-radius: 50%;
+            border: 1px solid #ccc; background: #eee; color: #444; font-size: 20px; line-height: 1; cursor: pointer; }
+.mf-close:hover { background: #ddd; color: #000; }
+.mf-form label { display: block; margin-top: 14px; font-weight: bold; }
+.mf-form input[type=text], .mf-form input[type=email], .mf-form input[type=tel], .mf-form textarea {
+  width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px; border: 1px solid #bbb;
+  border-radius: 4px; font: inherit; background: #fff; }
+.mf-form textarea { min-height: 80px; resize: vertical; }
+.mf-form input:focus-visible, .mf-form textarea:focus-visible { outline: 2px solid #c8874a; outline-offset: 1px; }
+.mf-check { display: flex; align-items: flex-start; gap: 8px; margin-top: 16px; }
+.mf-check input { margin-top: 4px; flex: none; }
+.mf-check label { margin: 0; font-weight: normal; }
+.mf-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.mf-submit { margin-top: 18px; border: 0; cursor: pointer; font: inherit; }
+.mf-msg { min-height: 1.4em; margin-top: 10px; font-weight: bold; color: #8a3b1e; }
+/* membership form: the confirmation that replaces the form once it is accepted */
+.mf-done { margin: 4px 0 8px; padding: 22px 20px; border: 2px solid #2f6b45; border-radius: 8px;
+           background: #e9f4ec; text-align: center; outline: none; }
+.mf-done-tick { margin: 0 0 6px; font-size: 40px; line-height: 1; color: #2f6b45; }
+.mf-done-title { margin: 0 0 8px; font-size: 1.25em; font-weight: bold; color: #1e4a2e; }
+.mf-done-close { margin-top: 10px; border: 0; cursor: pointer; font: inherit; }
+.mf-submit:disabled { opacity: .6; cursor: progress; }
+
+/* Plaques: photos that pop up each plaque's details panel (as on the live site) */
+.pl-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin: 0 auto 2em; max-width: 720px; }
+.pl-thumb { padding: 0; border: 0; background: none; cursor: zoom-in; line-height: 0; border-radius: 4px;
+            transition: transform .15s, box-shadow .15s; box-shadow: 0 3px 8px rgba(0,0,0,.2); }
+.pl-thumb:hover, .pl-thumb:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,.28); }
+.pl-thumb:focus-visible { outline: 2px solid #c8874a; outline-offset: 3px; }
+.pl-thumb img { display: block; max-width: 100%; height: auto; margin: 0; }
+.pl-dialog { width: min(760px, 94vw); max-height: 92vh; padding: 0; border: 0; border-radius: 8px; background: #fffef2;
+             box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+.pl-dialog::backdrop { background: rgba(0,0,0,.65); }
+.pl-card { position: relative; padding: 44px 18px 18px; }
+.pl-panel { display: block; width: 100%; height: auto; margin: 0; }
+.pl-text { display: none; margin: 14px 4px 0; font-size: 15px; line-height: 1.5; color: #222; }
+@media (max-width: 600px) { .pl-text { display: block; } }     /* the panel's words, readable on a phone */
+.pl-close { position: absolute; top: 8px; right: 10px; width: 34px; height: 34px; border-radius: 50%;
+            border: 1px solid #ccc; background: #eee; color: #444; font-size: 20px; line-height: 1; cursor: pointer; }
+.pl-close:hover { background: #ddd; color: #000; }
+
+/* "Hear it remembered": Oral History moments on heritage pages (content/extras/oral-history-clips.json) */
+.oh-clips { margin: 2em auto 1.5em; max-width: 680px; padding: 14px 18px; border: 1px solid #d6d2c4; border-radius: 6px; background: #faf8f2; }
+.oh-clips h2 { margin: 0 0 .2em; font-size: 1.15em; text-align: center; }
+.content .oh-clips p { margin: 0 0 .8em; text-align: center; font-size: .9em; }
+.oh-clips ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.oh-btn.oh-clip { display: grid; grid-template-columns: 34px 1fr; gap: 2px 10px; width: 100%; text-align: left; line-height: 1.4;
+  padding: 10px 12px; border: 1px solid #d6d2c4; border-radius: 5px; background: #fff; font: inherit; color: inherit; }
+.oh-btn.oh-clip:hover, .oh-btn.oh-clip:focus-visible { border-color: #8a7a4a; background: #fffdf6; }
+.oh-play { grid-row: span 2; align-self: center; width: 30px; height: 30px; border-radius: 50%; background: #b3261e; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 13px; padding-left: 2px; }
+.oh-quote { font-style: italic; }
+.oh-src { font-size: .85em; color: #5a5f66; }

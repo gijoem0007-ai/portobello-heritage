@@ -1,0 +1,11 @@
+# Built output - recreated by build.py / tools\make_release.py
+release/
+
+# Downloaded copies of the old Xara pages used for comparison
+tools/compare/cache/
+
+# Python / Windows clutter
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini

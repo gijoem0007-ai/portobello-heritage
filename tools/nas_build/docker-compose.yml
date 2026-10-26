@@ -1,0 +1,17 @@
+# PHT replica: automatic rebuild on the NAS (see watch.py).
+# Start / update:  docker compose -f "<this file>" up -d
+# Stop:            docker compose -f "<this file>" down
+services:
+  pht-build:
+    image: python:3.12-alpine
+    container_name: pht-build
+    restart: unless-stopped
+    user: "0:10"                 # gid 10 (admin): UGOS share permissions (see LLM Wiki notes)
+    environment:
+      - TZ=Europe/London
+      - PYTHONDONTWRITEBYTECODE=1
+    volumes:
+      - "/volume1/Projects/Websites/Portobello heritage/PHT replica website/portobello-clone:/site"
+    ports:
+      - "8780:8780"              # preview: home network and Tailscale only (not the public Funnel)
+    command: ["python", "-u", "/site/tools/nas_build/watch.py"]

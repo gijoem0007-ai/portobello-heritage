@@ -1,0 +1,123 @@
+{
+ "file": "golden days.htm",
+ "variant": "desktop (desktop text=3165 imgs=6; mobile text=3165 imgs=7)",
+ "title": "Portobello Heritage Trust,  portobello beach",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 280.0,
+   "left": 263.0,
+   "paras": [
+    "Golden Days"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 301.0,
+   "left": 186.0,
+   "paras": [
+    "This nostalgic celebration of long, hot, summer days with crowds on the Portobello beach had a pilot event in 2002 as can be seen in the flyer below:"
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40302.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 347.0,
+   "left": 186.0,
+   "w": 402.0,
+   "h": 550.0
+  },
+  {
+   "type": "text",
+   "top": 950.0,
+   "left": 90.0,
+   "paras": [
+    "One of the main organisers was Gordon Mackay. According to the Autumn 2002 edition of The Portobello Reporter: “The aim of this festival on June 15 was to promote Portobello – Edinburgh’s Seaside. Based on the theme of music, dance and culture of the 1930s to the 60s, it was funded by the City of Edinburgh Council, Radio Forth and Jewel & Esk Valley College, and organised by a team of enthusiasts including some local people. Events started on the Promenade at 12.30pm with performances in the garden of Bedford House Hotel by the 30s swing group ‘Swing2002’, crooner Craig McMurdo, Hillbilly from England’s ‘Skiprats’, and a 60s set from local favourites ‘The Monuments’. The nearby line-up of over 20 classic cars was a great attraction, and an exhibition of 1953 fashion, memorabilia and photographs at the Swim Centre was well attended, with the old photographs attracting the most interest. Further along, children enjoyed pony rides. Demonstrations and lessons in Leroc, Swing and Lindy Hop at Straiton Place were especially popular with the younger generation, and deck-chairs on the beach were occupied by people enjoying this novelty and the music. At the Town Hall in the evening Julian Grant of Forth 2 presented the swing and jump jive outfit ‘The Big Heat’ and the Rockabilly band ‘Hi Voltage’. Demonstrations by Scotland’s top jive and swing dancers were introduced by Craig McMurdo with rock’n’roll devotees of all ages, suitably attired, joining in. This was a promising start to what is to be an annual event, with more activities on the promenade and more local involvement.” The event in 2003 did go ahead. The main sponsor was the Millennium Commission’s ‘You and Your Community’ Awards scheme. The City of Edinburgh Council sponsored the publicity material. The colourful flyer below was a result of this. Additional funding came from Edinburgh & Lothian Tourist Board. The theme of the event was based round the ‘Golden Era’ of family beach holidays from the 1930s to 60s."
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40303.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 1367.0,
+   "left": 57.0,
+   "w": 588.0,
+   "h": 415.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40304.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 1854.0,
+   "left": 57.0,
+   "w": 591.0,
+   "h": 830.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40305.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 2722.0,
+   "left": 57.0,
+   "w": 597.0,
+   "h": 423.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40306.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 3160.0,
+   "left": 57.0,
+   "w": 594.0,
+   "h": 416.0
+  },
+  {
+   "type": "text",
+   "top": 3618.0,
+   "left": 57.0,
+   "paras": [
+    "There was a lot happening with ‘Fun for Everyone on the Prom & Beach’. Bill Barclay, a well-known comedian at the time, performed for an hour at ‘The Old Pier’. Radio Forth (Forth 2) had an outside broadcast on the prom featuring music from the 40s and 50s from 2 until 5.30pm. Later, they hosted The Golden Days Show A musical journey through the 40s and 50s in the Town Hall from 7.30pm until 1am. The UKs Best Rock‘n’Roll Bands’ performed, with tickets to either dance or watch the show available."
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40307.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 3720.0,
+   "left": 63.0,
+   "w": 570.0,
+   "h": 562.0
+  },
+  {
+   "type": "text",
+   "top": 4310.0,
+   "left": 71.0,
+   "paras": [
+    "Local volunteer guides and drivers helped make this day a success. Their reward was a free lunch in the Swim Centre cafeteria and a pair of complimentary tickets for the evening show. Portobello Community Council and local councillors lent their support to the event. There is no information regarding a repeat of this in 2004, however the popularity of the promenade and beach has never really waned, even if the type of events being held has changed. All images are Copyright of Portobello Heritage Trust ©"
+   ]
+  },
+  {
+   "type": "button",
+   "href": "heritage.htm",
+   "label": "Back to Heritage Page",
+   "top": 4487.0,
+   "left": 252.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm"
+ ]
+}

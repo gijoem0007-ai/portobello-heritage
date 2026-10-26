@@ -1,0 +1,231 @@
+{
+ "file": "photos of coade stone pillars.htm",
+ "variant": "mobile (desktop text=99 imgs=0; mobile text=41 imgs=21)",
+ "title": "Portobello Heritage Trust, E,coade stone pillars,photos",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 299.0,
+   "left": 72.0,
+   "paras": [
+    "Hover over each Photo to see description."
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40731.png",
+   "alt": "The Restored Coade Stone Pillars",
+   "rollover": false,
+   "top": 354.0,
+   "left": 57.0,
+   "w": 168.0,
+   "h": 134.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40732.jpg",
+   "alt": "The Derelict Paddling Pool in 2005.",
+   "rollover": false,
+   "top": 360.0,
+   "left": 242.0,
+   "w": 155.0,
+   "h": 123.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40735.png",
+   "alt": "The pillar sections in Council storage.",
+   "rollover": false,
+   "top": 504.0,
+   "left": 57.0,
+   "w": 168.0,
+   "h": 134.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40736.jpg",
+   "alt": "The paddling pool having been demolished.",
+   "rollover": false,
+   "top": 510.0,
+   "left": 242.0,
+   "w": 155.0,
+   "h": 123.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40742.png",
+   "alt": "Taking the mould off a new rose and crown quadrant to complete a circle.",
+   "rollover": false,
+   "top": 651.0,
+   "left": 57.0,
+   "w": 168.0,
+   "h": 134.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40747.png",
+   "alt": "The structural supports inside the pillars.",
+   "rollover": false,
+   "top": 651.0,
+   "left": 235.0,
+   "w": 168.0,
+   "h": 134.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40743.png",
+   "alt": "The circle for the pillars.",
+   "rollover": false,
+   "top": 803.0,
+   "left": 57.0,
+   "w": 168.0,
+   "h": 135.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40744.png",
+   "alt": "The bases for the pillars being put in.",
+   "rollover": false,
+   "top": 803.0,
+   "left": 235.0,
+   "w": 168.0,
+   "h": 135.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40737.png",
+   "alt": "The garden having been planted in 2006.",
+   "rollover": false,
+   "top": 954.0,
+   "left": 56.0,
+   "w": 168.0,
+   "h": 134.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40738.png",
+   "alt": "A close up of some of the chimneys at Dalmeny House.",
+   "rollover": false,
+   "top": 954.0,
+   "left": 235.0,
+   "w": 168.0,
+   "h": 134.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40748.png",
+   "alt": "Part of one of the crown tops being lifted into the garden.",
+   "rollover": false,
+   "top": 1100.0,
+   "left": 57.0,
+   "w": 168.0,
+   "h": 135.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40746.png",
+   "alt": "The pillars under construction.",
+   "rollover": false,
+   "top": 1100.0,
+   "left": 235.0,
+   "w": 168.0,
+   "h": 135.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40739.png",
+   "alt": "Fleur de lys quadrants after cleaning.",
+   "rollover": false,
+   "top": 1269.0,
+   "left": 44.0,
+   "w": 116.0,
+   "h": 166.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40740.png",
+   "alt": "Lion quadrants after cleaning.",
+   "rollover": false,
+   "top": 1269.0,
+   "left": 183.0,
+   "w": 113.0,
+   "h": 163.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40741.png",
+   "alt": "Rose and crown quadrants after cleaning.",
+   "rollover": false,
+   "top": 1269.0,
+   "left": 314.0,
+   "w": 113.0,
+   "h": 163.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40733.png",
+   "alt": "One of the pillars at Argyle House before it was painted.",
+   "rollover": false,
+   "top": 1452.0,
+   "left": 44.0,
+   "w": 116.0,
+   "h": 161.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40734.png",
+   "alt": "The same pillar at Argyle House having been painted grey.",
+   "rollover": false,
+   "top": 1452.0,
+   "left": 180.0,
+   "w": 118.0,
+   "h": 161.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40749.png",
+   "alt": "The fleur de lys pillar being constructed.",
+   "rollover": false,
+   "top": 1452.0,
+   "left": 314.0,
+   "w": 113.0,
+   "h": 163.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40750.png",
+   "alt": "The larger pillar with its new crown top.",
+   "rollover": false,
+   "top": 1626.0,
+   "left": 47.0,
+   "w": 113.0,
+   "h": 163.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40745.png",
+   "alt": "A conservator working on one of the smaller pillars.",
+   "rollover": false,
+   "top": 1626.0,
+   "left": 314.0,
+   "w": 113.0,
+   "h": 163.0
+  },
+  {
+   "type": "button",
+   "href": "heritage.htm",
+   "label": "Back to Heritage Page",
+   "top": 1893.0,
+   "left": 118.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events page.htm",
+  "links.htm",
+  "contact us.htm",
+  "terms.htm"
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "grid_hint": "Hover over each Photo to see description.",
+ "grid": [
+  {
+   "image": "50740.jpg",
+   "description": "The Restored Coade Stone Pillars"
+  },
+  {
+   "image": "50744.jpg",
+   "description": "The Derelict Paddling Pool in 2005."
+  },
+  {
+   "image": "50748.jpg",
+   "description": "The circle for the pillars."
+  },
+  {
+   "image": "50752.jpg",
+   "description": "The bases for the pillars being put in."
+  },
+  {
+   "image": "50756.jpg",
+   "description": "The pillar sections in Council storage."
+  },
+  {
+   "image": "50760.jpg",
+   "description": "The paddling pool having been demolished."
+  },
+  {
+   "image": "50764.jpg",
+   "description": "The garden having been planted in 2006."
+  },
+  {
+   "image": "50768.jpg",
+   "description": "A close up of some of the chimneys at Dalmeny House."
+  },
+  {
+   "image": "50772.jpg",
+   "description": "Taking the mould off a new rose and crown quadrant to complete a circle."
+  },
+  {
+   "image": "50776.jpg",
+   "description": "The structural supports inside the pillars."
+  },
+  {
+   "image": "50780.jpg",
+   "description": "Part of one of the crown tops being lifted into the garden."
+  },
+  {
+   "image": "50817.jpg",
+   "description": "The pillars under construction."
+  }
+ ],
+ "zoom_hint": "Hover over each Photo to zoom in and see in-depth details.",
+ "zoom": [
+  {
+   "image": "50783.jpg",
+   "caption": "Lion quadrants after cleaning"
+  },
+  {
+   "image": "50788.jpg",
+   "caption": "Fleur de lys quadrants after cleaning"
+  },
+  {
+   "image": "50800.jpg",
+   "caption": "One of the pillars at Argyle House before it was painted"
+  },
+  {
+   "image": "50804.jpg",
+   "caption": "The same pillar at Argyle House having been painted grey"
+  },
+  {
+   "image": "50792.jpg",
+   "caption": "Rose and crown quadrants after cleaning"
+  },
+  {
+   "image": "50796.jpg",
+   "caption": "The larger pillar with its new crown top"
+  },
+  {
+   "image": "50808.jpg",
+   "caption": "The fleur de lys pillar being constructed"
+  },
+  {
+   "image": "50812.jpg",
+   "caption": "A conservator working on one of the smaller pillars"
+  }
+ ]
+}

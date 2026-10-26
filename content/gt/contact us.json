@@ -1,0 +1,41 @@
+{
+ "file": "contact us.htm",
+ "variant": "desktop (desktop text=605 imgs=0; mobile text=685 imgs=1)",
+ "title": "Portobello Heritage Trust, contact us",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 298.0,
+   "left": 45.0,
+   "paras": [
+    "Do you have photographs, documents, objects or memories of Portobello’s varied heritage that you could share with us? If so, we would like to hear from you.",
+    "Would you like to join the Trust and support our work? Individual membership is available by downloading the membership and gift aid forms to complete and return to us. Please contact us if your group would like to join as an associate member.",
+    "Please email us (admin@portobelloheritagetrust.co.uk) to get in touch if you have any queries or comments. Alternatively, you can write to us at the address shown below. We look forward to hearing from you."
+   ]
+  },
+  {
+   "type": "button",
+   "href": "index_htm_files/Gift%20Declaration%20form.pdf",
+   "label": "Gift Aid Declaration Form",
+   "top": 596.0,
+   "left": 244.0
+  },
+  {
+   "type": "button",
+   "href": "index_htm_files/GDPR%20data%20protection%20policy.pdf",
+   "label": "Data Protection Policy",
+   "top": 640.0,
+   "left": 260.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "index_htm_files/GDPR%20data%20protection%20policy.pdf",
+  "index_htm_files/Gift%20Declaration%20form.pdf",
+  "terms.htm"
+ ]
+}

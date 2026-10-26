@@ -1,0 +1,26 @@
+# events page.htm | title=Portobello Heritage Trust, Edinburgh, events page
+
+[SLIDER @top=447 left=288 431.0x202.0: 43451.jpg, 43452.jpg, 43453.jpg, 43454.jpg, 43455.jpg]
+
+--- text @top=692 left=287
+Photo Gallery of Kiln Celebrations
+
+[SLIDER @top=791 left=41 678.0x318.0: 43446.jpg, 43276.jpg, 43447.jpg, 43448.jpg, 43277.jpg, 43278.jpg, 43449.jpg]
+
+--- text @top=1156 left=187
+Photo Gallery of Portobello Dig
+
+[BUTTON 'Back to Events Page' -> None @top=1261]
+
+## LINKS
+https://jtmwebsites.uk/
+index.htm
+heritage.htm
+links.htm
+contact%20us.htm
+forthcoming%20events.htm
+#
+dig portobello.htm
+kiln celebration.htm
+porty love stories.htm
+terms.htm

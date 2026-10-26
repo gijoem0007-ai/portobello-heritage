@@ -1,0 +1,43 @@
+{
+ "chapters": [
+  {
+   "title": "01 Growing Up around Pipe Street",
+   "video": "uh26zapvhDo",
+   "audio": "Xv3vhw8I6Oo"
+  },
+  {
+   "title": "02 Home and Towerbank School",
+   "video": "dFZvQdQ4FMA",
+   "audio": "eZFYGlhIRlY"
+  },
+  {
+   "title": "03 The Great War and the Jewel Hospital",
+   "video": "l_fmBcD1j8M",
+   "audio": "nCcY2J5V7oc"
+  },
+  {
+   "title": "04 52 Years in the Packing Room",
+   "video": "m3Nr_--ayng",
+   "audio": "f0QTKYaEn1I"
+  },
+  {
+   "title": "05 Saturday Shopping in Leith and Church on Sunday",
+   "video": "FeSR1T1RgzU",
+   "audio": "j6U87PF1oiY"
+  }
+ ],
+ "buttons": {
+  "video": {
+   "label": "Video Essay",
+   "image": "50824.png",
+   "hover": "50825.png",
+   "width": 151
+  },
+  "audio": {
+   "label": "Audio File",
+   "image": "54054.png",
+   "hover": "54055.png",
+   "width": 149
+  }
+ }
+}

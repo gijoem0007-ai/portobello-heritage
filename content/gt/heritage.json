@@ -1,0 +1,59 @@
+{
+ "file": "heritage.htm",
+ "variant": "desktop (desktop text=8 imgs=1; mobile text=0 imgs=2)",
+ "title": "Heritage",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 366.0,
+   "left": 358.0,
+   "paras": [
+    "Heritage"
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/phtgif04.gif",
+   "alt": "",
+   "rollover": false,
+   "top": 442.0,
+   "left": 264.0,
+   "w": 439.0,
+   "h": 256.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm",
+  "pottery manufacture.htm",
+  "salt pans.htm",
+  "georgian houses.htm",
+  "heritage trail leaflet.htm",
+  "chocolate factory.htm",
+  "entertainment.htm",
+  "pier.htm",
+  "marine gardens.htm",
+  "portobello harbour.htm",
+  "beach.htm",
+  "golden days.htm",
+  "toddlers hut.htm",
+  "helen hopkirk.htm",
+  "sir peter heatly.htm",
+  "euphemia tot addy.htm",
+  "william leatham.htm",
+  "peggy brown.htm",
+  "shops and shopkeepers.htm",
+  "high days and holidays.htm",
+  "miss meg moir.htm",
+  "prince phillip.htm",
+  "hendersons garage.htm",
+  "plaques.htm",
+  "coade stone pillars.htm",
+  "photos of coade stone pillars.htm",
+  "oral%20history.htm"
+ ]
+}

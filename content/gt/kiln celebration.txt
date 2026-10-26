@@ -1,0 +1,24 @@
+# kiln celebration.htm | title=Portobello Heritage Trust, kiln celebration
+
+--- text @top=288 left=51
+Kiln Community Celebration
+On Saturday, 10 th May 2014, around 200 people attended our community event to celebrate the completion of the pottery kiln rebuild. Such a turn-out shows that people do care about the future of the kilns and makes worthwhile the many hours spent ensuring that the rebuild was completed. Professor John Hume, Chair of the Royal Commission on the Ancient and Historical Monuments of Scotland, cut the ribbon. Dayle Salmon and Dave Martin, the bricklayers who completed the work to such a high standard, travelled from England with their wives to join the celebration. In the photograph are, left to right, Dayle Salmon, Professor Hume, Dr Margaret Munro, Chair of the Trust, Professor Ross Buchan, consultant to City of Edinburgh Council, and Dave Martin. Music provided by Beyond the Pale enhanced the festival mood. A glass of wine was offered to those who came along. There were stalls selling craft goods; a Trust stall selling our heritage postcards and a new coloured postcard with an artist’s interpretation of the kilns specially created for the event, our DVD ‘It Always Seemed to be Sunny, Memories of Portobello’, booklet Harry Lauder Portobello to the Palace and several Buchan pottery pieces. Director and potter Alison Robinson had a stall where you could make your own brick. All the stalls proved very popular. The community spirit present in Portobello helped make our event the success it was. We would like to thank Beyond the Pale who played free of charge; Northern Light provided the PA system free of charge; Portobello Open Door provided their marquee free of charge; St. James’s Church provided tables and chairs free of charge and local artist Barbara Hilliam donated her kilns illustration to the Trust. Now that the kiln is rebuilt, we must ensure that future maintenance of the kilns is carried out as agreed by the City of Edinburgh Council.
+
+[SLIDER @top=797 left=51 666.0x312.0: 43476.jpg, 43477.jpg, 43478.jpg, 43479.jpg, 43480.jpg, 43481.jpg]
+
+--- text @top=1144 left=65
+Kiln ‘Topping Out’ Ceremony
+The ‘topping out’ ceremony for the 1909 kiln took place on Wednesday, 20th November 2013. This means that the last brick was laid to complete the external brickwork. The two bricklayers, Dayle Salmon and Dave Martin, have completed the brickwork to a very high standard and now have the inner dome to rebuild. Councillor Maureen Child and Trust Chair Margaret Munro helped insert the 2013 date brick marking where the rebuilt brickwork started. This meant that those present at the ceremony donned high visibility waistcoats and hard hats before bravely climbing a metal ladder onto the first scaffolding landing, with two climbing to the top to see the new 1909 date brick. Dayle and Dave were presented with commemorative glazed ceramic plaques, made by potter and Trust Director Alison Robinson, and small flagons, thrown by ex-Buchan potter and Trust member Arthur Jeffery, to mark the occasion. As the remaining brickwork is internal and protected from the weather, it is hoped that the planned completion date of 20th December will be met.
+
+[SLIDER @top=1500 left=51 666.0x312.0: 43482.jpg, 43483.jpg, 43484.jpg, 43485.jpg]
+
+[BUTTON 'Back to Events Page' -> events%20page.htm @top=1906]
+
+## LINKS
+https://jtmwebsites.uk/
+index.htm
+heritage.htm
+events%20page.htm
+links.htm
+contact%20us.htm
+terms.htm

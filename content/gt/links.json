@@ -1,0 +1,26 @@
+{
+ "file": "links.htm",
+ "variant": "desktop (desktop text=1694 imgs=0; mobile text=1694 imgs=1)",
+ "title": "Portobello Heritage Trust website",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 311.0,
+   "left": 55.0,
+   "paras": [
+    "Websites to aid your research",
+    "The National Records of Scotland https://www.nrscotland.gov.uk/ The NRS provides the registration and statistical functions of the Registrar General for Scotland, including responsibility for demographic statistics and census, and the archival functions of the Keeper including maintaining the archives as one of Scotland’s five National Collections, and providing a leadership role for Scottish archive and record professionals. They are also responsible for the service for family history provided under the highly successful ScotlandsPeople brand. ScotlandPeople is available online, in their offices in Edinburgh and, increasingly in Local Family History Centres. Royal Commission on the Ancient and Historical Monuments of Scotland www.rcahms.gov.ukYou will find many Portobello examples among the numerous drawings and photographs of Scotland’s built heritage. The National Library of Scotland www.nls.uk Apart from its millions of books, periodicals and manuscripts the NLS also hosts the Scottish Screen Archive and the Scottish Map Library.Scotlands Places www.scotlandsplaces.gov.uk Here you can get access to a number of national databases by simply entering a place name such as Portobello into a box and clicking Search.Capital Collectionswww.capitalcollections.org.uk This is a collection of images and material from the collections of Edinburgh City Library, museums and galleries.",
+    "Musselburgh Conservation Society A similar group in our neighbour burgh; The Musselburgh Conservation Society was founded more than 25 years ago, and exists to preserve Musselburgh’s built heritage and encourage good-quality new designs which will last into the future."
+   ]
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "contact%20us.htm",
+  "https://www.nrscotland.gov.uk/",
+  "terms.htm"
+ ]
+}

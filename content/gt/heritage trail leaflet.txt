@@ -1,0 +1,43 @@
+# heritage trail leaflet.htm | title=heritage trail leaflet
+
+[IMG index_htm_files/40105.jpg @top=280 left=308 148.0x298.0]
+
+--- text @top=625 left=36
+Architecture Heritage Trail Leaflet
+This leaflet has been published by the trust in cooperation with Portobello Amenity Society to increase local knowledge and appreciation of Portobello’s history and architecture. It is available free at Portobello Library and through local outlets .Copies have also been placed with VisitScotland in Edinburgh and local guest houses. Support for the publication was provided by Portobello and Craigmillar Neighbourhood Partnership Community Grant Fund.
+
+--- text @top=771 left=380
+Heritage Trail Leaflet Click on photo to download a PDF copy
+
+[IMG index_htm_files/40106.jpg @top=829 left=36 166.0x116.0]
+
+[IMG index_htm_files/40107.jpg @top=829 left=212 166.0x116.0]
+
+[IMG index_htm_files/40108.jpg @top=829 left=392 166.0x116.0]
+
+[IMG index_htm_files/40109.jpg @top=829 left=572 166.0x116.0]
+
+--- text @top=964 left=36
+Heritage Trail Leaflet Page 1
+
+--- text @top=964 left=212
+Heritage Trail Leaflet Page 2
+
+--- text @top=964 left=392
+Heritage Trail Leaflet Page 3
+
+--- text @top=964 left=574
+Heritage Trail Leaflet Page 4
+
+## LINKS
+https://jtmwebsites.uk/
+index.htm
+heritage.htm
+events%20page.htm
+links.htm
+contact%20us.htm
+index_htm_files/page%201.JPG
+index_htm_files/page%202.JPG
+index_htm_files/page%203.JPG
+index_htm_files/page%204.JPG
+terms.htm

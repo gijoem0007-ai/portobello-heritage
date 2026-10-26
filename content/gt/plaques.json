@@ -1,0 +1,331 @@
+{
+ "file": "plaques.htm",
+ "variant": "desktop (desktop text=43 imgs=30; mobile text=43 imgs=31)",
+ "title": "Portobello Heritage Trust,  plaques",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 257.0,
+   "left": 265.0,
+   "paras": [
+    "Plaques (Click on Plaque to reveal details)"
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/13695.png",
+   "alt": "Helen Hopekirk - Pianist and Composer.  During her life-time Helen Hopekirk was best known as a pianist and teacher. Her father, a printer and piano retailer in Portobello, encouraged her interest in music. She studied piano in her teens in Edinburgh and in her twenties in Vienna. Following successful tours in the USA she moved to Boston with her husband/manager. She was renowned for her huge repertoire both as a soloist and with an orchestra. Whilst she composed throughout her life, the most distinctive element of her compositions after 1900 came from the music and poetry of Scotland. Location: Portobello High Street EH15 1AH",
+   "rollover": false,
+   "top": 338.0,
+   "left": 21.0,
+   "w": 711.0,
+   "h": 245.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10323.png",
+   "alt": "The police station was erected in 1877 as the Town Council Office, Portobello then being an independent burgh. The previous Town Hall, now the Baptist Church, had proved to be too small, so a larger building was created with council and court rooms above, offices for the treasurer, town clerk and registrar below, police cells to the rear. The building, in the Franco-baronial style, was designed by Robert Paterson. When Portobello became part of Edinburgh in 1896, a public library was established on the first floor and remained here until 1963 when the present Library opened in Rosefield Avenue. Since then the police have occupied the whole building. Location: Portobello High Street EH15 1AL",
+   "rollover": false,
+   "top": 347.0,
+   "left": 41.0,
+   "w": 714.0,
+   "h": 283.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/13696.png",
+   "alt": "Hugh Miller -  Geologist. Hugh Miller was a founding father of geology and palaeontology, thanks to painstaking exploration of rocks in his native Cromarty, his meticulous self-taught analysis, and the eloquence of his writing in such classic books as \"The Old Red Sandstone\".  He found over 6,000 fossils which form the basis of the collection of the National Museum of Scotland.  He campaigned tirelessly against injustices, helped to found the Free Church of Scotland, and was the outspoken editor of the Christian newspaper \"The Witness\".  He struggled to reconcile his Christian faith with his scientific observations and took his own life when overwhelmed by silicosis resulting from his years as a stonemason. Location: Portobello High Street EH15 1AN",
+   "rollover": false,
+   "top": 347.0,
+   "left": 44.0,
+   "w": 711.0,
+   "h": 277.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/13673.png",
+   "alt": "Harry Lauder -  Music Hall star. Lauder was born here, but his family later moved away. He worked in a mill and as a miner before finding success on the stage. He became an international music hall star and wrote many popular songs including “I Love a Lassie” and “Roamin in the Gloamin”. Lauder lost his only son John in action during World War One, after which he wrote “Keep Right on to the End of the Road”. He was knighted in 1919 for his fund-raising efforts during the war. Often deprecated for his persona of a thrifty Scotsman, Lauder was privately a generous man. His songs are still sung world-wide. Location: Bridge Street, EH15 1DB",
+   "rollover": false,
+   "top": 349.0,
+   "left": 44.0,
+   "w": 711.0,
+   "h": 278.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/13697.png",
+   "alt": "The Tower was built, c.1785, by William Jameson for James Cunningham, W.S. who lived at Shrub Mount which still stands on Portobello High Street. At that time its garden stretched down to the sea and The Tower was built as a summerhouse or folly at the bottom of the garden. An octagon, in stone and Portobello brick, its walls contain medieval stone carvings and 17th Century architectural fragments which are thought to have come from the Mercat Cross in Edinburgh, the old Edinburgh University buildings, and St. Andrews Cathedral. The adjoining mansion was added in the mid 19th Century. Location: Beach Lane EH15 1HU",
+   "rollover": false,
+   "top": 349.0,
+   "left": 44.0,
+   "w": 711.0,
+   "h": 278.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10327.png",
+   "alt": "Ned Barnie -  Channel swimmer. In 1950, William ‘Ned’ Barnie became the first Scot to swim the English Channel. The following year, he became the first man to swim it in both directions in one season. During World War One, Barnie served with the Royal Scots and the Royal Engineers, and was awarded the Military Medal. He taught science at various Edinburgh schools. In 1946, he became the President of the Scottish Amateur Swimming Association. He often swam from Portobello to Fisherrow, Musselburgh, and several times from Granton to Burntisland. He enjoyed sea swimming until his death, aged 87. Location: Straiton Place EH15 2BB",
+   "rollover": false,
+   "top": 349.0,
+   "left": 44.0,
+   "w": 711.0,
+   "h": 278.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40495.png",
+   "alt": "",
+   "rollover": false,
+   "top": 361.0,
+   "left": 56.0,
+   "w": 199.0,
+   "h": 107.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40497.png",
+   "alt": "",
+   "rollover": false,
+   "top": 361.0,
+   "left": 283.0,
+   "w": 199.0,
+   "h": 107.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40499.png",
+   "alt": "",
+   "rollover": false,
+   "top": 361.0,
+   "left": 510.0,
+   "w": 199.0,
+   "h": 107.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/13698.png",
+   "alt": "David Laing -  Bookseller, antiquary and librarian. David Laing was an Edinburgh bookseller, antiquary and, from 1837-1878, librarian of the Signet Library. The leading expert on early Scottish books and manuscripts, he amassed a huge library, an impressive collection of old master drawings (left to the Royal Scottish Academy), other art works, and – tracked down from many sources – a vast collection of important letters, papers and manuscripts which he bequeathed to the University of Edinburgh. He edited many important older Scottish texts. From 1845, he lived at East Villa near the foot of James Street. One wing of his house, now much altered, survives as 1a Laing Terrace. Location: Promenade EH15 2DX",
+   "rollover": false,
+   "top": 472.0,
+   "left": 44.0,
+   "w": 711.0,
+   "h": 278.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10328.png",
+   "alt": "Sir Walter Scott  Novelist and poet. Scott, born in Edinburgh in 1771, spent much of his childhood in the Borders. He became an advocate and in 1822 orchestrated the visit of George IV to Scotland. Scott’s literary output was prodigious, especially after 1826 when he wrote himself out of debt, thereby weakening his health and leading to an early death in 1832. Scott is famous for his romantic historical novels and poems, collections of Scottish tales and ballads, and his vivid portrayal of Scottish characters. His son-in-law J.G. Lockhart, who wrote Scott’s biography, lived in this house which Scott visited. Location: Bellfield Street EH15 2BR",
+   "rollover": false,
+   "top": 478.0,
+   "left": 44.0,
+   "w": 711.0,
+   "h": 278.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40501.png",
+   "alt": "",
+   "rollover": false,
+   "top": 481.0,
+   "left": 53.0,
+   "w": 199.0,
+   "h": 137.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40503.png",
+   "alt": "",
+   "rollover": false,
+   "top": 484.0,
+   "left": 280.0,
+   "w": 199.0,
+   "h": 140.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40505.png",
+   "alt": "",
+   "rollover": false,
+   "top": 483.0,
+   "left": 507.0,
+   "w": 199.0,
+   "h": 137.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/13699.png",
+   "alt": "William Hay -  Architect. Hay, born in Peterhead, studied architecture, later working for George Gilbert Scott and becoming influenced by Gothic Revival. He moved to Canada in 1847 where he designed various buildings on the east coast, the City Hall and Court House in Kingston, Ontario, being fine examples of his civic architecture. He also built several churches, notably the Cathedral of the Most Holy Trinity in Hamilton, Bermuda. In 1860 he returned to Edinburgh and set up practice. He was employed by William Chambers, Lord Provost, to create a single space from the then sub-divided St Giles Cathedral. Hay also designed the rood screen and the west door which is the main entrance to the Cathedral. In St Giles there is little acknowledgement of his work. Location: Brunstane Road North EH15 2DN",
+   "rollover": false,
+   "top": 601.0,
+   "left": 38.0,
+   "w": 711.0,
+   "h": 323.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40507.png",
+   "alt": "",
+   "rollover": false,
+   "top": 635.0,
+   "left": 53.0,
+   "w": 199.0,
+   "h": 107.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40509.png",
+   "alt": "",
+   "rollover": false,
+   "top": 635.0,
+   "left": 280.0,
+   "w": 199.0,
+   "h": 107.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40511.png",
+   "alt": "",
+   "rollover": false,
+   "top": 636.0,
+   "left": 509.0,
+   "w": 197.0,
+   "h": 106.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10332.png",
+   "alt": "Rock Cottage is about 400 years old and is one of two remaining buildings belonging to the salt works which stood on this site from the 17th century to 1953. These works were part of an extensive industry along both shores of the Firth of Forth. The cottage is sturdily built with walls five feet thick and is believed to be the oldest house on this part of the coast. It was renovated in the 1950s and is now a most attractive dwelling with a fine view at the back over the Firth of Forth. Location: Joppa Pans EH15 2HF",
+   "rollover": false,
+   "top": 731.0,
+   "left": 17.0,
+   "w": 711.0,
+   "h": 304.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10333.png",
+   "alt": "William Speirs Bruce -  Explorer. Speirs Bruce was one of the foremost Polar scientists of his age. He abandoned his medical studies in Edinburgh in order to pursue his life-long passion for natural history and oceanography. Instead of going with Scott’s doomed British Antarctic Expedition, he organised the \"Scotia\" Scottish Antarctic Expedition with the support of the Coats family of Paisley. This expedition achieved its aim of collecting novel scientific information of the region and also established the oldest meteorological station in Antarctica. In Scotland he co-founded Edinburgh Zoo and founded the Scottish Ski Club. Location: South Morton Street EH15 2NB",
+   "rollover": false,
+   "top": 735.0,
+   "left": 27.0,
+   "w": 710.0,
+   "h": 312.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10331.png",
+   "alt": "Eric Sutherland Lomax -  Writer. Eric Lomax achieved fame with the publication of his autobiography “The Railway Man”, later made into a film, which recounted his experiences as a prisoner of war on the \"Death Railway\" in Burma and his subsequent forgiveness and befriending of one of his Japanese torturers.  He grew up in Bedford Terrace, Joppa, where he developed his passion for railways thanks to the nearby Portobello Goods Yard – the largest in Scotland.  In 1939 before joining up he got engaged to Nan, marrying her when he returned from the war. Location: Bedford Terrace, EH15 2EJ",
+   "rollover": false,
+   "top": 736.0,
+   "left": 39.0,
+   "w": 711.0,
+   "h": 299.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10335.png",
+   "alt": "William Russell Flint -  Artist William Russell Flint was an artist and illustrator. While living in Portobello he was apprenticed in lithography and attended Edinburgh’s Royal Institute of Art. He then moved to London to work as a medical illustrator and for the “Illustrated London News” and illustrated several books including “Savoy Operas” and “Canterbury Tales”. He was particularly known for paintings of women, including Spanish dancers. He was president of the Royal Society of Painters in Watercolours from 1936 to 1956 and was knighted in 1947. Location: Rosefield Place, EH15 1AZ",
+   "rollover": false,
+   "top": 740.0,
+   "left": 39.0,
+   "w": 711.0,
+   "h": 293.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10336.png",
+   "alt": "Congregational Church, Marlborough Street Built in 1836, this building operated as a Congregational Church until 2000 when the Congregational Church merged with the United Reformed Church. Due to falling numbers the church closed in 2009 and the premises were converted into a private dwelling. The Congregational Church was formed in 1835 by the Congregational Union of Scotland. The Church was of the reformed tradition with each congregation being responsible for the running and upkeep of its own building along with paying the minister’s salary. Location: Marlborough Street EH15 2BD",
+   "rollover": false,
+   "top": 742.0,
+   "left": 15.0,
+   "w": 711.0,
+   "h": 293.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/10334.png",
+   "alt": "The Baptist Church Built in 1862 as Portobello’s first town hall, the building was designed by David Bryce. The first house in Portobello, a cottage built around 1753 and named Porto Bello after the battle of Puerto Bello in 1739, was demolished to make way for the new building. A double-height council chamber occupied the centre of the building while the central gable supported a Gothic clock – currently in Council storage awaiting re-instatement – which was added in 1868. When the new Town Hall (now the police station) opened in 1877, this building became the Star Cinema until it was bought by the Baptists in 1919. Location: Portobello High Street EH15 1EU",
+   "rollover": false,
+   "top": 742.0,
+   "left": 37.0,
+   "w": 711.0,
+   "h": 293.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40515.png",
+   "alt": "",
+   "rollover": false,
+   "top": 755.0,
+   "left": 280.0,
+   "w": 199.0,
+   "h": 136.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40517.png",
+   "alt": "",
+   "rollover": false,
+   "top": 755.0,
+   "left": 507.0,
+   "w": 199.0,
+   "h": 136.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40513.png",
+   "alt": "",
+   "rollover": false,
+   "top": 759.0,
+   "left": 53.0,
+   "w": 199.0,
+   "h": 132.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40519.png",
+   "alt": "",
+   "rollover": false,
+   "top": 913.0,
+   "left": 53.0,
+   "w": 199.0,
+   "h": 120.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40521.png",
+   "alt": "",
+   "rollover": false,
+   "top": 912.0,
+   "left": 280.0,
+   "w": 199.0,
+   "h": 122.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40523.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 912.0,
+   "left": 507.0,
+   "w": 199.0,
+   "h": 122.0
+  },
+  {
+   "type": "button",
+   "href": "heritage.htm",
+   "label": "Back to Heritage Page",
+   "top": 1093.0,
+   "left": 271.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm"
+ ]
+}

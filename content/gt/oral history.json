@@ -1,0 +1,150 @@
+{
+ "file": "oral history.htm",
+ "variant": "desktop (desktop text=673 imgs=0; mobile text=673 imgs=1)",
+ "title": "Portobello Heritage Trust website",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 306.0,
+   "left": 187.0,
+   "paras": [
+    "Portobello Oral History Archive"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 346.0,
+   "left": 150.0,
+   "paras": [
+    "Explore our digital archive below. Each chapter of Portobello’s history can be experienced in two ways: listen to the Audio Files, authentic recordings made in years gone by and restored for clarity, with nothing added or re-voiced; or watch our Video Essays, where those same genuine voices are illustrated with AI-assisted reconstructions of the people, places and eras described. The voices are real; the images are our reinterpretation of the period."
+   ]
+  },
+  {
+   "type": "text",
+   "top": 486.0,
+   "left": 344.0,
+   "paras": [
+    "Isa Dean"
+   ]
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/uh26zapvhDo?si=o_k3o6KWF9p1cwHI",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/dFZvQdQ4FMA?si=0riAL7-xd80Bq0zH",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/l_fmBcD1j8M?si=1qjDI6vP1X9h-ZVL",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/m3Nr_--ayng?si=eomB_dwHbW-bvfds",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/FeSR1T1RgzU?si=0ZoXAUusbOWd_h5g",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/Xv3vhw8I6Oo?si=GIYxhXxmOjEJQ3z6",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/eZFYGlhIRlY?si=69QumkUZnnY8KQOd",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/nCcY2J5V7oc?si=9YUGu0oOgU5BO_y5",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/f0QTKYaEn1I?si=sNjrIsatYucuTnk2",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "embed",
+   "src": "https://www.youtube.com/embed/j6U87PF1oiY?si=38XBlm3i61wlzqVu",
+   "title": "YouTube video player",
+   "top": 506.0,
+   "left": 0
+  },
+  {
+   "type": "text",
+   "top": 520.0,
+   "left": 267.0,
+   "paras": [
+    "01 Growing Up around Pipe Street"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 620.0,
+   "left": 258.0,
+   "paras": [
+    "02 Home and Towerbank School"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 720.0,
+   "left": 241.0,
+   "paras": [
+    "03 The Great War and the Jewel Hospital"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 816.0,
+   "left": 267.0,
+   "paras": [
+    "04 52 Years in the Packing Room"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 912.0,
+   "left": 201.0,
+   "paras": [
+    "05 Saturday Shopping in Leith and Church on Sunday"
+   ]
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm"
+ ]
+}

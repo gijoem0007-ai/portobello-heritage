@@ -1,0 +1,61 @@
+{
+  "checked": "14 October 2026",
+  "live_note": "Live site as published on 14 October 2026, compared with the replica rebuilt from the Xara export of 14 October 2026 (11:54).",
+  "groups": [
+    {
+      "title": "Fixed or brought across since the first check",
+      "level": "fixed",
+      "items": [
+        {
+          "page": "photos-of-coade-stone-pillars",
+          "text": "Photos of Coade Stone Pillars: the 12-photo grid with descriptions on hover, then the 8 zoomable close-ups, as on the live desktop page (13 October)."
+        },
+        {
+          "page": "heritage",
+          "text": "Heritage: the underlined \"Heritage\" heading (13 October)."
+        },
+        {
+          "page": "events",
+          "text": "Events: the extra \"Forthcoming Events\" button removed, and the greyed \"Back to Events Page\" button shown (13 October)."
+        },
+        {
+          "page": "oral-history",
+          "text": "Oral History: the new intro wording, from the 14 October export."
+        },
+        {
+          "page": "index",
+          "text": "Home: the new \"Join the Portobello Heritage Trust…\" paragraph, from the 14 October export. Its Membership Application Form button will appear once the forms are built."
+        }
+      ]
+    },
+    {
+      "title": "For Joe to confirm",
+      "level": "check",
+      "items": [
+        {
+          "page": "contact",
+          "text": "Contact: the line \"Postal address: Portobello Heritage Trust, 16 Bellfield Lane, Edinburgh, EH15 2BL\" is no longer on the Contact page itself in the latest Xara version; it now appears only inside the membership form pop-up. Was that intended? (The Registered Office address is still on the home page.)"
+        },
+        {
+          "page": "photos-of-coade-stone-pillars",
+          "text": "Photos of Coade Stone Pillars on the live site: the top gallery's description area includes an image whose address is the placeholder \"{text}\". Hover over a photo there and see whether a small broken-image icon appears."
+        }
+      ]
+    },
+    {
+      "title": "Effects on the live site that the replica doesn't have",
+      "level": "low",
+      "items": [
+        {
+          "page": "helen-hopekirk",
+          "text": "Photos that fade in as you scroll down to them: Chocolate Factory, Helen Hopekirk, Heritage Trail Leaflet, Marine Gardens, Shops and Shopkeepers and Toddlers Hut. On the replica the same photos are there from the start."
+        }
+      ]
+    }
+  ],
+  "not_covered": "Not covered: the phone layout of the live site, and spacing or alignment that only a person looking at the page would notice. Intended differences (page titles, clickable addresses, plaque panels, payment details on Contact) are listed under each page, not as problems.",
+  "page_notes": {
+    "photos-of-coade-stone-pillars": "Reviewed by eye: this live page draws both galleries with scripts the automatic check can't see, so the replica's photos are listed as extra below. Checked by hand: the replica has the same 12-photo grid and 8 zoomable close-ups. The replica also shows each close-up's caption under it, where the live site shows it in the zoom.",
+    "miss-meg-moir": "Reviewed by eye: the two flagged photos (High Street looking east, and the second street view) are the same pictures on both sites; Xara re-saved them 1 pixel narrower when publishing. No action needed."
+  }
+}

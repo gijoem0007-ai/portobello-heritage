@@ -1,0 +1,119 @@
+{
+ "file": "heritage trail leaflet.htm",
+ "variant": "desktop (desktop text=663 imgs=5; mobile text=663 imgs=6)",
+ "title": "heritage trail leaflet",
+ "blocks": [
+  {
+   "type": "img",
+   "src": "index_htm_files/40105.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 280.0,
+   "left": 308.0,
+   "w": 148.0,
+   "h": 298.0
+  },
+  {
+   "type": "text",
+   "top": 625.0,
+   "left": 36.0,
+   "paras": [
+    "Architecture Heritage Trail Leaflet",
+    "This leaflet has been published by the trust in cooperation with Portobello Amenity Society to increase local knowledge and appreciation of Portobello’s history and architecture. It is available free at Portobello Library and through local outlets .Copies have also been placed with VisitScotland in Edinburgh and local guest houses. Support for the publication was provided by Portobello and Craigmillar Neighbourhood Partnership Community Grant Fund."
+   ]
+  },
+  {
+   "type": "text",
+   "top": 771.0,
+   "left": 380.0,
+   "paras": [
+    "Heritage Trail Leaflet Click on photo to download a PDF copy"
+   ]
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40106.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 829.0,
+   "left": 36.0,
+   "w": 166.0,
+   "h": 116.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40107.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 829.0,
+   "left": 212.0,
+   "w": 166.0,
+   "h": 116.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40108.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 829.0,
+   "left": 392.0,
+   "w": 166.0,
+   "h": 116.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40109.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 829.0,
+   "left": 572.0,
+   "w": 166.0,
+   "h": 116.0
+  },
+  {
+   "type": "text",
+   "top": 964.0,
+   "left": 36.0,
+   "paras": [
+    "Heritage Trail Leaflet Page 1"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 964.0,
+   "left": 212.0,
+   "paras": [
+    "Heritage Trail Leaflet Page 2"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 964.0,
+   "left": 392.0,
+   "paras": [
+    "Heritage Trail Leaflet Page 3"
+   ]
+  },
+  {
+   "type": "text",
+   "top": 964.0,
+   "left": 574.0,
+   "paras": [
+    "Heritage Trail Leaflet Page 4"
+   ]
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "index_htm_files/page%201.JPG",
+  "index_htm_files/page%202.JPG",
+  "index_htm_files/page%203.JPG",
+  "index_htm_files/page%204.JPG",
+  "terms.htm"
+ ]
+}

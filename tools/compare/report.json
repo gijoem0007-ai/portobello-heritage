@@ -1,0 +1,1497 @@
+[
+ {
+  "page": "index",
+  "live": "index.htm",
+  "replica": "index.html",
+  "counts": {
+   "live": {
+    "sentences": 22,
+    "pictures": 3,
+    "buttons": 1,
+    "links": 4
+   },
+   "replica": {
+    "sentences": 16,
+    "pictures": 3,
+    "buttons": 1,
+    "links": 4
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "heritage",
+  "live": "heritage.htm",
+  "replica": "heritage.html",
+  "counts": {
+   "live": {
+    "sentences": 1,
+    "pictures": 1,
+    "buttons": 0,
+    "links": 1
+   },
+   "replica": {
+    "sentences": 1,
+    "pictures": 1,
+    "buttons": 0,
+    "links": 1
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "events",
+  "live": "events page.htm",
+  "replica": "events.html",
+  "counts": {
+   "live": {
+    "sentences": 2,
+    "pictures": 12,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 3,
+    "pictures": 12,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [
+     7,
+     5
+    ],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [
+     5,
+     7
+    ],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "Page title \"Events\" (the live page has none; every replica page has a title by decision, CHANGELOG section 23)."
+  ]
+ },
+ {
+  "page": "links",
+  "live": "links.htm",
+  "replica": "links.html",
+  "counts": {
+   "live": {
+    "sentences": 10,
+    "pictures": 0,
+    "buttons": 0,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 7,
+    "pictures": 0,
+    "buttons": 0,
+    "links": 6
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "Clickable on the replica, plain text on the live page (decision, CHANGELOG section 23): capitalcollections.org.uk, nls.uk, rcahms.gov.uk, scotlandsplaces.gov.uk."
+  ]
+ },
+ {
+  "page": "contact",
+  "live": "contact us.htm",
+  "replica": "contact.html",
+  "counts": {
+   "live": {
+    "sentences": 8,
+    "pictures": 0,
+    "buttons": 2,
+    "links": 3
+   },
+   "replica": {
+    "sentences": 9,
+    "pictures": 0,
+    "buttons": 2,
+    "links": 4
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 1,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "Clickable on the replica, plain text on the live page (decision, CHANGELOG section 23): admin@portobelloheritagetrust.co.uk."
+  ]
+ },
+ {
+  "page": "terms",
+  "live": "terms.htm",
+  "replica": "terms.html",
+  "counts": {
+   "live": {
+    "sentences": 15,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 15,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "beach",
+  "live": "beach.htm",
+  "replica": "heritage/beach.html",
+  "counts": {
+   "live": {
+    "sentences": 51,
+    "pictures": 8,
+    "buttons": 1,
+    "links": 3
+   },
+   "replica": {
+    "sentences": 38,
+    "pictures": 8,
+    "buttons": 1,
+    "links": 3
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "chocolate-factory",
+  "live": "chocolate factory.htm",
+  "replica": "heritage/chocolate-factory.html",
+  "counts": {
+   "live": {
+    "sentences": 70,
+    "pictures": 2,
+    "buttons": 1,
+    "links": 3
+   },
+   "replica": {
+    "sentences": 69,
+    "pictures": 2,
+    "buttons": 1,
+    "links": 3
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures that appear as you scroll down on the live page",
+    "items": [
+     "40117.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40123.jpg fades in when scrolled to on the live page; the replica shows it straight away"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "coade-stone-pillars",
+  "live": "coade stone pillars.htm",
+  "replica": "heritage/coade-stone-pillars.html",
+  "counts": {
+   "live": {
+    "sentences": 224,
+    "pictures": 9,
+    "buttons": 2,
+    "links": 3
+   },
+   "replica": {
+    "sentences": 60,
+    "pictures": 9,
+    "buttons": 2,
+    "links": 3
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "entertainment",
+  "live": "entertainment.htm",
+  "replica": "heritage/entertainment.html",
+  "counts": {
+   "live": {
+    "sentences": 122,
+    "pictures": 8,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 91,
+    "pictures": 8,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "euphemia-tot-addy",
+  "live": "euphemia tot addy.htm",
+  "replica": "heritage/euphemia-tot-addy.html",
+  "counts": {
+   "live": {
+    "sentences": 24,
+    "pictures": 2,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 24,
+    "pictures": 2,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "georgian-houses",
+  "live": "georgian houses.htm",
+  "replica": "heritage/georgian-houses.html",
+  "counts": {
+   "live": {
+    "sentences": 91,
+    "pictures": 7,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 87,
+    "pictures": 7,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "golden-days",
+  "live": "golden days.htm",
+  "replica": "heritage/golden-days.html",
+  "counts": {
+   "live": {
+    "sentences": 26,
+    "pictures": 6,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 26,
+    "pictures": 6,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "helen-hopekirk",
+  "live": "helen hopkirk.htm",
+  "replica": "heritage/helen-hopekirk.html",
+  "counts": {
+   "live": {
+    "sentences": 51,
+    "pictures": 4,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 48,
+    "pictures": 6,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures that appear as you scroll down on the live page",
+    "items": [
+     "40328.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40330.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40335.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40337.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "12083.png fades in when scrolled to on the live page; the replica shows it straight away",
+     "40340.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40342.jpg fades in when scrolled to on the live page; the replica shows it straight away"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "hendersons-garage",
+  "live": "hendersons garage.htm",
+  "replica": "heritage/hendersons-garage.html",
+  "counts": {
+   "live": {
+    "sentences": 32,
+    "pictures": 5,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 32,
+    "pictures": 5,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "heritage-trail-leaflet",
+  "live": "heritage trail leaflet.htm",
+  "replica": "heritage/heritage-trail-leaflet.html",
+  "counts": {
+   "live": {
+    "sentences": 10,
+    "pictures": 5,
+    "buttons": 0,
+    "links": 5
+   },
+   "replica": {
+    "sentences": 9,
+    "pictures": 5,
+    "buttons": 0,
+    "links": 5
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures that appear as you scroll down on the live page",
+    "items": [
+     "40106.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40107.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40108.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40109.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40112.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40113.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40114.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40115.jpg fades in when scrolled to on the live page; the replica shows it straight away"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "high-days-and-holidays",
+  "live": "high days and holidays.htm",
+  "replica": "heritage/high-days-and-holidays.html",
+  "counts": {
+   "live": {
+    "sentences": 40,
+    "pictures": 1,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 40,
+    "pictures": 1,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "marine-gardens",
+  "live": "marine gardens.htm",
+  "replica": "heritage/marine-gardens.html",
+  "counts": {
+   "live": {
+    "sentences": 50,
+    "pictures": 17,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 50,
+    "pictures": 17,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures that appear as you scroll down on the live page",
+    "items": [
+     "40256.jpg fades in when scrolled to on the live page; the replica shows it straight away"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "miss-meg-moir",
+  "live": "miss meg moir.htm",
+  "replica": "heritage/miss-meg-moir.html",
+  "counts": {
+   "live": {
+    "sentences": 33,
+    "pictures": 3,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 31,
+    "pictures": 3,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures missing from replica",
+    "items": [
+     "53804.png (528x353)",
+     "53805.png (533x356)"
+    ]
+   },
+   {
+    "kind": "pictures on replica but not on live page",
+    "items": [
+     "40471.png (529x353)",
+     "40472.png (534x356)"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "oral-history",
+  "live": "oral history.htm",
+  "replica": "heritage/oral-history.html",
+  "counts": {
+   "live": {
+    "sentences": 10,
+    "pictures": 0,
+    "buttons": 2,
+    "links": 1
+   },
+   "replica": {
+    "sentences": 10,
+    "pictures": 0,
+    "buttons": 2,
+    "links": 1
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [
+     "FeSR1T1RgzU",
+     "Xv3vhw8I6Oo",
+     "dFZvQdQ4FMA",
+     "eZFYGlhIRlY",
+     "f0QTKYaEn1I",
+     "j6U87PF1oiY",
+     "l_fmBcD1j8M",
+     "m3Nr_--ayng",
+     "nCcY2J5V7oc",
+     "uh26zapvhDo"
+    ],
+    "click_to_enlarge": 0,
+    "popups": 10,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [
+     "FeSR1T1RgzU",
+     "Xv3vhw8I6Oo",
+     "dFZvQdQ4FMA",
+     "eZFYGlhIRlY",
+     "f0QTKYaEn1I",
+     "j6U87PF1oiY",
+     "l_fmBcD1j8M",
+     "m3Nr_--ayng",
+     "nCcY2J5V7oc",
+     "uh26zapvhDo"
+    ],
+    "click_to_enlarge": 0,
+    "popups": 1,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "peggy-brown",
+  "live": "peggy brown.htm",
+  "replica": "heritage/peggy-brown.html",
+  "counts": {
+   "live": {
+    "sentences": 94,
+    "pictures": 8,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 55,
+    "pictures": 8,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "photos-of-coade-stone-pillars",
+  "live": "photos of coade stone pillars.htm",
+  "replica": "heritage/photos-of-coade-stone-pillars.html",
+  "counts": {
+   "live": {
+    "sentences": 2,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 11,
+    "pictures": 20,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 12
+   }
+  },
+  "differences": [
+   {
+    "kind": "text on replica but not on live page",
+    "items": [
+     "Lion quadrants after cleaning",
+     "Fleur de lys quadrants after cleaning",
+     "One of the pillars at Argyle House before it was painted",
+     "The same pillar at Argyle House having been painted grey",
+     "Rose and crown quadrants after cleaning",
+     "The larger pillar with its new crown top",
+     "The fleur de lys pillar being constructed",
+     "A conservator working on one of the smaller pillars"
+    ]
+   },
+   {
+    "kind": "pictures on replica but not on live page",
+    "items": [
+     "50740.jpg (227x170)",
+     "50744.jpg (227x170)",
+     "50748.jpg (227x170)",
+     "50752.jpg (227x170)",
+     "50756.jpg (227x170)",
+     "50760.jpg (227x170)",
+     "50764.jpg (227x170)",
+     "50768.jpg (227x170)",
+     "50772.jpg (227x170)",
+     "50776.jpg (227x170)",
+     "50780.jpg (227x170)",
+     "50817.jpg (227x170)",
+     "50783.jpg (240x320)",
+     "50788.jpg (240x320)",
+     "50800.jpg (240x320)",
+     "50804.jpg (240x320)",
+     "50792.jpg (240x320)",
+     "50796.jpg (240x320)",
+     "50808.jpg (240x320)",
+     "50812.jpg (240x320)"
+    ]
+   }
+  ],
+  "intended": [
+   "Page title \"Photos of Coade Stone Pillars\" (the live page has none; every replica page has a title by decision, CHANGELOG section 23)."
+  ]
+ },
+ {
+  "page": "pier",
+  "live": "pier.htm",
+  "replica": "heritage/pier.html",
+  "counts": {
+   "live": {
+    "sentences": 52,
+    "pictures": 5,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 50,
+    "pictures": 5,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "plaques",
+  "live": "plaques.htm",
+  "replica": "heritage/plaques.html",
+  "counts": {
+   "live": {
+    "sentences": 2,
+    "pictures": 15,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 2,
+    "pictures": 30,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 15,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "The 15 plaque detail panels: on the live page each one opens when you click its plaque; the replica shows them under the thumbnails (CHANGELOG section 4)."
+  ]
+ },
+ {
+  "page": "portobello-harbour",
+  "live": "portobello harbour.htm",
+  "replica": "heritage/portobello-harbour.html",
+  "counts": {
+   "live": {
+    "sentences": 19,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 5
+   },
+   "replica": {
+    "sentences": 19,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 5
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "pottery-manufacture",
+  "live": "pottery manufacture.htm",
+  "replica": "heritage/pottery-manufacture.html",
+  "counts": {
+   "live": {
+    "sentences": 41,
+    "pictures": 2,
+    "buttons": 4,
+    "links": 6
+   },
+   "replica": {
+    "sentences": 39,
+    "pictures": 2,
+    "buttons": 4,
+    "links": 6
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "prince-philip",
+  "live": "prince phillip.htm",
+  "replica": "heritage/prince-philip.html",
+  "counts": {
+   "live": {
+    "sentences": 15,
+    "pictures": 3,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 13,
+    "pictures": 3,
+    "buttons": 1,
+    "links": 3
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "Clickable on the replica, plain text on the live page (decision, CHANGELOG section 23): admin@portobelloheritagetrust.co.uk."
+  ]
+ },
+ {
+  "page": "salt-pans",
+  "live": "salt pans.htm",
+  "replica": "heritage/salt-pans.html",
+  "counts": {
+   "live": {
+    "sentences": 32,
+    "pictures": 9,
+    "buttons": 1,
+    "links": 4
+   },
+   "replica": {
+    "sentences": 23,
+    "pictures": 9,
+    "buttons": 1,
+    "links": 4
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "shops-and-shopkeepers",
+  "live": "shops and shopkeepers.htm",
+  "replica": "heritage/shops-and-shopkeepers.html",
+  "counts": {
+   "live": {
+    "sentences": 155,
+    "pictures": 11,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 155,
+    "pictures": 11,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures that appear as you scroll down on the live page",
+    "items": [
+     "40431.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40449.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40451.jpg fades in when scrolled to on the live page; the replica shows it straight away"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "sir-peter-heatly",
+  "live": "sir peter heatly.htm",
+  "replica": "heritage/sir-peter-heatly.html",
+  "counts": {
+   "live": {
+    "sentences": 22,
+    "pictures": 4,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 21,
+    "pictures": 4,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "toddlers-hut",
+  "live": "toddlers hut.htm",
+  "replica": "heritage/toddlers-hut.html",
+  "counts": {
+   "live": {
+    "sentences": 30,
+    "pictures": 1,
+    "buttons": 1,
+    "links": 3
+   },
+   "replica": {
+    "sentences": 30,
+    "pictures": 1,
+    "buttons": 1,
+    "links": 3
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [
+   {
+    "kind": "pictures that appear as you scroll down on the live page",
+    "items": [
+     "40315.jpg fades in when scrolled to on the live page; the replica shows it straight away",
+     "40319.jpg fades in when scrolled to on the live page; the replica shows it straight away"
+    ]
+   }
+  ],
+  "intended": []
+ },
+ {
+  "page": "william-leatham",
+  "live": "william leatham.htm",
+  "replica": "heritage/william-leatham.html",
+  "counts": {
+   "live": {
+    "sentences": 0,
+    "pictures": 4,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 1,
+    "pictures": 4,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "Page title \"William Leatham Policeman\" (the live page has none; every replica page has a title by decision, CHANGELOG section 23)."
+  ]
+ },
+ {
+  "page": "forthcoming-events",
+  "live": "forthcoming events.htm",
+  "replica": "events/forthcoming-events.html",
+  "counts": {
+   "live": {
+    "sentences": 0,
+    "pictures": 1,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 1,
+    "pictures": 1,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": [
+   "Page title \"Forthcoming Events\" (the live page has none; every replica page has a title by decision, CHANGELOG section 23)."
+  ]
+ },
+ {
+  "page": "dig-portobello",
+  "live": "dig portobello.htm",
+  "replica": "events/dig-portobello.html",
+  "counts": {
+   "live": {
+    "sentences": 27,
+    "pictures": 0,
+    "buttons": 2,
+    "links": 3
+   },
+   "replica": {
+    "sentences": 27,
+    "pictures": 0,
+    "buttons": 2,
+    "links": 3
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "kiln-celebration",
+  "live": "kiln celebration.htm",
+  "replica": "events/kiln-celebration.html",
+  "counts": {
+   "live": {
+    "sentences": 24,
+    "pictures": 10,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 23,
+    "pictures": 10,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [
+     6,
+     4
+    ],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [
+     6,
+     4
+    ],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ },
+ {
+  "page": "porty-love-stories",
+  "live": "porty love stories.htm",
+  "replica": "events/porty-love-stories.html",
+  "counts": {
+   "live": {
+    "sentences": 16,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 2
+   },
+   "replica": {
+    "sentences": 16,
+    "pictures": 0,
+    "buttons": 1,
+    "links": 2
+   }
+  },
+  "widgets": {
+   "live": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   },
+   "replica": {
+    "galleries": [],
+    "videos": [],
+    "click_to_enlarge": 0,
+    "popups": 0,
+    "hover_descriptions": 0
+   }
+  },
+  "differences": [],
+  "intended": []
+ }
+]

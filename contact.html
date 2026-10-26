@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<meta name="description" content="Portobello Heritage Trust, contact us">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<a href="index.html"><img class="banner" src="images/pht/39931.jpg" alt="Portobello Heritage Trust"></a>
+</header>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="heritage.html">Heritage</a>
+<a href="events.html">Events</a>
+<a href="links.html">Links</a>
+<a href="contact.html" class="active">Contact Us</a>
+</nav>
+<main>
+<div class="container"><h1 class="page-title">Contact Us</h1>
+<p>Do you have photographs, documents, objects or memories of Portobello’s varied heritage that you could share with us? If so, we would like to hear from you.</p>
+<p>Would you like to join the Trust and support our work? Individual membership is available by downloading the membership and gift aid forms to complete and return to us. Please contact us if your group would like to join as an associate member.</p>
+<p>Please email us (<a href="mailto:admin@portobelloheritagetrust.co.uk">admin@portobelloheritagetrust.co.uk</a>) to get in touch if you have any queries or comments. Alternatively, you can write to us at the address shown below. We look forward to hearing from you.</p>
+<div class="btn-row"><a class="btn" href="files/Gift%20Declaration%20form.pdf" target="_blank" rel="noopener">Gift Aid Declaration Form</a><a class="btn" href="files/GDPR%20data%20protection%20policy.pdf" target="_blank" rel="noopener">Data Protection Policy</a></div><div class="btn-row"><button type="button" class="btn mf-open" aria-haspopup="dialog">Membership Application Form</button></div><dialog class="mf-dialog" aria-labelledby="mf-title">
+<div class="mf-card">
+<button type="button" class="mf-close" aria-label="Close">&times;</button>
+<h2 id="mf-title">Membership Application Form</h2>
+<div class="mf-done" role="alert" tabindex="-1" hidden>
+<p class="mf-done-tick" aria-hidden="true">&#10004;</p>
+<p class="mf-done-title">Thank you &ndash; your application has been submitted!</p>
+<p>Your annual membership subscription can be paid using either of the methods below.</p>
+<button type="button" class="btn mf-done-close">Close</button>
+</div>
+<form class="mf-form" novalidate>
+<label for="mf-name">Name</label><input id="mf-name" name="name" type="text" required autocomplete="name"><label for="mf-address">Address</label><textarea id="mf-address" name="address" required autocomplete="street-address"></textarea><label for="mf-postcode">Post code</label><input id="mf-postcode" name="postcode" type="text" required autocomplete="postal-code"><label for="mf-phone">Telephone Number</label><input id="mf-phone" name="phone" type="tel" required autocomplete="tel"><label for="mf-email">E-mail Address</label><input id="mf-email" name="email" type="email" required autocomplete="email">
+<label for="mf-skills">Are there any areas in which you would be willing to offer advice/skills?</label>
+<textarea id="mf-skills" name="skills"></textarea>
+<div class="mf-check"><input id="mf-agree" name="agree" type="checkbox" required>
+<label for="mf-agree">I agree to my details and information, as given above, being included in the membership directory of Portobello Heritage Trust. My details will not be passed on to any other individual or organisation.</label></div>
+<label for="mf-signature">Typed Signature (type your full name)</label>
+<input id="mf-signature" name="signature" type="text" required autocomplete="name">
+<div class="mf-trap" aria-hidden="true"><label for="mf-website">Leave this empty</label>
+<input id="mf-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<button type="submit" class="btn mf-submit">Submit Application</button>
+<p class="mf-msg" role="status" aria-live="polite"></p>
+</form>
+<h3>How to Pay</h3>
+<p><strong>Annual Membership Subscription: &pound;10</strong></p>
+<p>Donations to the Trust are very welcome and may be paid using either method below.</p>
+<p><strong>(a) Cheque</strong><br>Made payable to Portobello Heritage Trust, sent to:<br>Stephen Hawkins &ndash; PHT Treasurer<br>12 West Brighton Crescent, Edinburgh EH15 1LU</p>
+<p><strong>(b) Electronic Transfer</strong><br>Sort Code: 80&ndash;18-31<br>Account No: 06002462<br>Account Name: Portobello Heritage Trust<br>Payment Reference: Your name</p>
+</div>
+</dialog>
+<script>
+(function () {
+  var dlg = document.querySelector(".mf-dialog"), form = dlg.querySelector(".mf-form"), msg = dlg.querySelector(".mf-msg");
+  var done = dlg.querySelector(".mf-done"), submit = form.querySelector(".mf-submit");
+  var preview = location.protocol === "file:" || /^(localhost|127\.|192\.168\.|10\.|[^.]+\.[^.]+\.ts\.net$)/.test(location.hostname);
+  function say(text) { msg.textContent = text; msg.scrollIntoView({block: "nearest"}); }
+  function busy(on) { submit.disabled = on; submit.textContent = on ? "Sending\u2026" : "Submit Application"; }
+  function fresh() { done.hidden = true; form.hidden = false; msg.textContent = ""; busy(false); }
+  document.querySelectorAll(".mf-open").forEach(function (b) { b.addEventListener("click", function () {
+    if (!done.hidden) fresh();                       // after a sent application, start again with an empty form
+    dlg.showModal();
+  }); });
+  dlg.querySelector(".mf-close").addEventListener("click", function () { dlg.close(); });
+  dlg.querySelector(".mf-done-close").addEventListener("click", function () { dlg.close(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!form.reportValidity()) { say("Please fill in all the boxes and tick the agreement."); return; }
+    if (preview) { say("This is a preview copy of the website, so the form can't send from here. It sends from the real website."); return; }
+    busy(true); msg.textContent = "";
+    fetch("process-form.php", { method: "POST", body: new FormData(form) })
+      .then(function (r) { return r.json(); })
+      .then(function (result) {
+        if (result.success) {                         // replace the form with a clear confirmation, at the top
+          form.reset(); form.hidden = true; done.hidden = false;
+          dlg.scrollTop = 0; done.focus();
+        } else { busy(false); say(result.error || "Something went wrong. Please try again."); }
+      })
+      .catch(function () { busy(false); say("Something went wrong. Your details are still here, so please try again."); });
+  });
+})();
+</script></div>
+</main>
+<footer class="site-footer">
+  <p><a href="terms.html">Terms &amp; Conditions</a></p>
+  <p><a href="https://jtmwebsites.uk/" target="_blank" rel="noopener">Created by jtm websites</a></p>
+  <p class="credit">Local test replica rebuilt from the Xara Apr 2026 export &mdash; not the live Portobello Heritage Trust site.</p>
+</footer>
+</body>
+</html>

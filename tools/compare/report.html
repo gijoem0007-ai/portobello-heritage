@@ -1,0 +1,244 @@
+<title>PHT Replica Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Open+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: one reading column of page cards; pages with differences first, matches folded below. */
+:root {
+  --bg: #fbfaf6; --surface: #ffffff; --ink: #24211d; --muted: #6d665c; --line: #e4ded3;
+  --brick: #9c4a33; --info-bg: #f6e7e1; --good: #2f6b45; --good-bg: #e6f1e9; --warn: #8a5a00; --warn-bg: #fbefd6;
+  --display: "Lora", Georgia, serif; --body: "Open Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #1b1916; --surface: #24211d; --ink: #ece6dc; --muted: #a79f93; --line: #3a352e;
+  --brick: #e08d72; --info-bg: #3a2620; --good: #8fd1a5; --good-bg: #1f3326; --warn: #f0c46b; --warn-bg: #3a2f17; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #1b1916; --surface: #24211d; --ink: #ece6dc; --muted: #a79f93; --line: #3a352e;
+  --brick: #e08d72; --info-bg: #3a2620; --good: #8fd1a5; --good-bg: #1f3326; --warn: #f0c46b; --warn-bg: #3a2f17; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+h1 { font: 600 2rem/1.15 var(--display); margin: 0 0 .3rem; text-wrap: balance; }
+h2 { font: 600 1.25rem/1.3 var(--display); margin: 2.2rem 0 .8rem; }
+h3 { font: 600 1.1rem/1.3 var(--display); margin: 0; }
+.lede { color: var(--muted); margin: 0 0 1.4rem; max-width: 65ch; }
+.summary { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 1rem; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; min-width: 140px; }
+.stat b { display: block; font: 600 1.6rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: .85rem; }
+.how { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; }
+.how ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+.how li { margin: .2rem 0; }
+.intended li { color: var(--muted); }
+.page { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; margin: 0 0 12px; }
+.page.has { border-left: 4px solid var(--warn); }
+.page header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.pill { font-size: .78rem; font-weight: 600; letter-spacing: .02em; padding: 3px 10px; border-radius: 999px; }
+.pill.good { color: var(--good); background: var(--good-bg); }
+.pill.warn { color: var(--warn); background: var(--warn-bg); }
+.files { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: .35rem 0 .8rem; color: var(--muted); font-size: .82rem; }
+code { font: .82rem var(--mono); }
+.body { display: grid; grid-template-columns: minmax(0, 190px) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 620px) { .body { grid-template-columns: minmax(0, 1fr); } }
+.counts { border-collapse: collapse; font-size: .85rem; width: 100%; font-variant-numeric: tabular-nums; }
+.counts th, .counts td { text-align: right; padding: 3px 6px; border-bottom: 1px solid var(--line); }
+.counts th[scope=row] { text-align: left; font-weight: 400; color: var(--muted); }
+.counts thead th { font-weight: 600; color: var(--muted); font-size: .78rem; }
+.counts tr.diff td { color: var(--warn); font-weight: 600; }
+.diffs { min-width: 0; }
+.diff-group { border-top: 1px solid var(--line); padding: 6px 0; }
+.diff-group:first-child { border-top: 0; padding-top: 0; }
+.diff-group summary { cursor: pointer; font-weight: 600; }
+.diff-group summary:focus-visible { outline: 2px solid var(--brick); outline-offset: 2px; }
+.diff-group .n { color: var(--muted); font-weight: 400; font-size: .85rem; }
+.diff-group ul { margin: .4rem 0 .2rem; padding-left: 1.1rem; }
+.diff-group li { margin: .25rem 0; overflow-wrap: anywhere; }
+.none { color: var(--good); margin: 0; }
+.finding { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 0 0 12px; }
+.finding ul { list-style: none; margin: .5rem 0 0; padding: 0; display: grid; gap: .7rem; }
+.finding li { max-width: 75ch; }
+.finding .pill { margin-right: .35rem; }
+.pill.info { color: var(--brick); background: var(--info-bg); }
+.pill.muted { color: var(--muted); background: var(--line); }
+.pill.check { color: var(--warn); background: var(--warn-bg); }
+.page-note { background: var(--info-bg); border-radius: 6px; padding: 8px 12px; font-size: .88rem; margin: 0 0 .8rem; }
+.small { font-size: .88rem; margin-top: .4rem; }
+h3.sub { font: 600 1.05rem/1.3 var(--display); color: var(--muted); margin: 1rem 0 .6rem; }
+.intended-note { margin-top: .6rem; color: var(--muted); font-size: .88rem; }
+.intended-note ul { margin: .2rem 0 0; padding-left: 1.1rem; }
+.ok-list summary { cursor: pointer; font: 600 1.25rem/1.3 var(--display); margin: 2.2rem 0 .8rem; }
+a { color: var(--brick); }
+</style>
+<div class="wrap">
+<h1>PHT Replica Check</h1>
+<p class="lede">Every page of the replica compared with the live Portobello Heritage Trust website, as a visitor sees them in a browser at desktop width. Checked 14 October 2026.</p>
+<div class="summary">
+  <div class="stat"><b>36</b><span>pages compared</span></div>
+  <div class="stat"><b>28</b><span>match</span></div>
+  <div class="stat"><b>8</b><span>with differences</span></div>
+</div>
+<div class="how">
+<strong>What was compared on each page</strong>
+<ul>
+<li><b>Text</b>: every sentence a visitor can read, ignoring spacing and line breaks.</li>
+<li><b>Pictures</b>: matched by the picture itself, not its file name, so a different picture is caught even if the name is the same.</li>
+<li><b>Buttons and links</b>: their labels and where they lead (pages, PDFs, other websites).</li>
+<li><b>Galleries and videos</b>: how many galleries, how many photos in each, and which YouTube videos the page plays.</li>
+</ul>
+<strong>Left out on purpose</strong> <span class="lede">(these differences are intended and recorded in the changelog)</span>
+<ul class="intended">
+<li>The menus, already checked against the live site separately. The replica also shows the category menu on article pages.</li>
+<li>The replica's footer note saying it is a local test copy.</li>
+</ul>
+</div>
+<h2>Findings</h2><p class="lede">Live site as published on 14 October 2026, compared with the replica rebuilt from the Xara export of 14 October 2026 (11:54).</p><section class="finding"><h3>Fixed or brought across since the first check</h3><ul><li><span class="pill good">Fixed</span> Photos of Coade Stone Pillars: the 12-photo grid with descriptions on hover, then the 8 zoomable close-ups, as on the live desktop page (13 October). <a href="#photos-of-coade-stone-pillars">Page details</a></li><li><span class="pill good">Fixed</span> Heritage: the underlined &quot;Heritage&quot; heading (13 October). <a href="#heritage">Page details</a></li><li><span class="pill good">Fixed</span> Events: the extra &quot;Forthcoming Events&quot; button removed, and the greyed &quot;Back to Events Page&quot; button shown (13 October). <a href="#events">Page details</a></li><li><span class="pill good">Fixed</span> Oral History: the new intro wording, from the 14 October export. <a href="#oral-history">Page details</a></li><li><span class="pill good">Fixed</span> Home: the new &quot;Join the Portobello Heritage Trust…&quot; paragraph, from the 14 October export. Its Membership Application Form button will appear once the forms are built. <a href="#index">Page details</a></li></ul></section><section class="finding"><h3>For Joe to confirm</h3><ul><li><span class="pill check">Check</span> Contact: the line &quot;Postal address: Portobello Heritage Trust, 16 Bellfield Lane, Edinburgh, EH15 2BL&quot; is no longer on the Contact page itself in the latest Xara version; it now appears only inside the membership form pop-up. Was that intended? (The Registered Office address is still on the home page.) <a href="#contact">Page details</a></li><li><span class="pill check">Check</span> Photos of Coade Stone Pillars on the live site: the top gallery&#x27;s description area includes an image whose address is the placeholder &quot;{text}&quot;. Hover over a photo there and see whether a small broken-image icon appears. <a href="#photos-of-coade-stone-pillars">Page details</a></li></ul></section><section class="finding"><h3>Effects on the live site that the replica doesn&#x27;t have</h3><ul><li><span class="pill muted">Effect</span> Photos that fade in as you scroll down to them: Chocolate Factory, Helen Hopekirk, Heritage Trail Leaflet, Marine Gardens, Shops and Shopkeepers and Toddlers Hut. On the replica the same photos are there from the start. <a href="#helen-hopekirk">Page details</a></li></ul></section><p class="lede small">Not covered: the phone layout of the live site, and spacing or alignment that only a person looking at the page would notice. Intended differences (page titles, clickable addresses, plaque panels, payment details on Contact) are listed under each page, not as problems.</p>
+<h2>Page by page</h2>
+<h3 class="sub">Pages with differences</h3>
+<article class="page has" id="chocolate-factory">
+<header><h3>Chocolate Factory</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>chocolate factory.htm</code></span><span>Replica: <code>heritage/chocolate-factory.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>70</td><td>69</td></tr><tr><th scope="row">Pictures</th><td>2</td><td>2</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>3</td><td>3</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group" open><summary>Pictures that appear as you scroll down on the live page (an effect, not missing content) <span class="n">2</span></summary><ul><li>40117.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40123.jpg fades in when scrolled to on the live page; the replica shows it straight away</li></ul></details></div></div>
+</article><article class="page has" id="helen-hopekirk">
+<header><h3>Helen Hopekirk</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>helen hopkirk.htm</code></span><span>Replica: <code>heritage/helen-hopekirk.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>51</td><td>48</td></tr><tr class=diff><th scope="row">Pictures</th><td>4</td><td>6</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group"><summary>Pictures that appear as you scroll down on the live page (an effect, not missing content) <span class="n">7</span></summary><ul><li>40328.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40330.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40335.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40337.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>12083.png fades in when scrolled to on the live page; the replica shows it straight away</li><li>40340.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40342.jpg fades in when scrolled to on the live page; the replica shows it straight away</li></ul></details></div></div>
+</article><article class="page has" id="heritage-trail-leaflet">
+<header><h3>Heritage Trail Leaflet</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>heritage trail leaflet.htm</code></span><span>Replica: <code>heritage/heritage-trail-leaflet.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>10</td><td>9</td></tr><tr><th scope="row">Pictures</th><td>5</td><td>5</td></tr><tr><th scope="row">Buttons</th><td>0</td><td>0</td></tr><tr><th scope="row">Links</th><td>5</td><td>5</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group"><summary>Pictures that appear as you scroll down on the live page (an effect, not missing content) <span class="n">8</span></summary><ul><li>40106.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40107.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40108.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40109.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40112.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40113.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40114.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40115.jpg fades in when scrolled to on the live page; the replica shows it straight away</li></ul></details></div></div>
+</article><article class="page has" id="marine-gardens">
+<header><h3>Marine Gardens</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>marine gardens.htm</code></span><span>Replica: <code>heritage/marine-gardens.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>50</td><td>50</td></tr><tr><th scope="row">Pictures</th><td>17</td><td>17</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group" open><summary>Pictures that appear as you scroll down on the live page (an effect, not missing content) <span class="n">1</span></summary><ul><li>40256.jpg fades in when scrolled to on the live page; the replica shows it straight away</li></ul></details></div></div>
+</article><article class="page has" id="miss-meg-moir">
+<header><h3>Miss Meg Moir</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>miss meg moir.htm</code></span><span>Replica: <code>heritage/miss-meg-moir.html</code></span></p>
+<p class="page-note">Reviewed by eye: the two flagged photos (High Street looking east, and the second street view) are the same pictures on both sites; Xara re-saved them 1 pixel narrower when publishing. No action needed.</p><div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>33</td><td>31</td></tr><tr><th scope="row">Pictures</th><td>3</td><td>3</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group" open><summary>Pictures on the live page that the replica doesn&#x27;t show <span class="n">2</span></summary><ul><li>53804.png (528x353)</li><li>53805.png (533x356)</li></ul></details><details class="diff-group" open><summary>Pictures on the replica that aren&#x27;t on the live page <span class="n">2</span></summary><ul><li>40471.png (529x353)</li><li>40472.png (534x356)</li></ul></details></div></div>
+</article><article class="page has" id="photos-of-coade-stone-pillars">
+<header><h3>Photos Of Coade Stone Pillars</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>photos of coade stone pillars.htm</code></span><span>Replica: <code>heritage/photos-of-coade-stone-pillars.html</code></span></p>
+<p class="page-note">Reviewed by eye: this live page draws both galleries with scripts the automatic check can&#x27;t see, so the replica&#x27;s photos are listed as extra below. Checked by hand: the replica has the same 12-photo grid and 8 zoomable close-ups. The replica also shows each close-up&#x27;s caption under it, where the live site shows it in the zoom.</p><div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>2</td><td>11</td></tr><tr class=diff><th scope="row">Pictures</th><td>0</td><td>20</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group"><summary>Text on the replica that isn&#x27;t on the live page <span class="n">8</span></summary><ul><li>Lion quadrants after cleaning</li><li>Fleur de lys quadrants after cleaning</li><li>One of the pillars at Argyle House before it was painted</li><li>The same pillar at Argyle House having been painted grey</li><li>Rose and crown quadrants after cleaning</li><li>The larger pillar with its new crown top</li><li>The fleur de lys pillar being constructed</li><li>A conservator working on one of the smaller pillars</li></ul></details><details class="diff-group"><summary>Pictures on the replica that aren&#x27;t on the live page <span class="n">20</span></summary><ul><li>50740.jpg (227x170)</li><li>50744.jpg (227x170)</li><li>50748.jpg (227x170)</li><li>50752.jpg (227x170)</li><li>50756.jpg (227x170)</li><li>50760.jpg (227x170)</li><li>50764.jpg (227x170)</li><li>50768.jpg (227x170)</li><li>50772.jpg (227x170)</li><li>50776.jpg (227x170)</li><li>50780.jpg (227x170)</li><li>50817.jpg (227x170)</li><li>50783.jpg (240x320)</li><li>50788.jpg (240x320)</li><li>50800.jpg (240x320)</li><li>50804.jpg (240x320)</li><li>50792.jpg (240x320)</li><li>50796.jpg (240x320)</li><li>50808.jpg (240x320)</li><li>50812.jpg (240x320)</li></ul></details><div class="intended-note"><b>Intended difference</b><ul><li>Page title &quot;Photos of Coade Stone Pillars&quot; (the live page has none; every replica page has a title by decision, CHANGELOG section 23).</li></ul></div></div></div>
+</article><article class="page has" id="shops-and-shopkeepers">
+<header><h3>Shops And Shopkeepers</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>shops and shopkeepers.htm</code></span><span>Replica: <code>heritage/shops-and-shopkeepers.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>155</td><td>155</td></tr><tr><th scope="row">Pictures</th><td>11</td><td>11</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group" open><summary>Pictures that appear as you scroll down on the live page (an effect, not missing content) <span class="n">3</span></summary><ul><li>40431.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40449.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40451.jpg fades in when scrolled to on the live page; the replica shows it straight away</li></ul></details></div></div>
+</article><article class="page has" id="toddlers-hut">
+<header><h3>Toddlers Hut</h3><span class="pill warn">Differences found</span></header>
+<p class="files"><span>Live: <code>toddlers hut.htm</code></span><span>Replica: <code>heritage/toddlers-hut.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>30</td><td>30</td></tr><tr><th scope="row">Pictures</th><td>1</td><td>1</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>3</td><td>3</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><details class="diff-group" open><summary>Pictures that appear as you scroll down on the live page (an effect, not missing content) <span class="n">2</span></summary><ul><li>40315.jpg fades in when scrolled to on the live page; the replica shows it straight away</li><li>40319.jpg fades in when scrolled to on the live page; the replica shows it straight away</li></ul></details></div></div>
+</article>
+<details class="ok-list"><summary>Pages that match (28)</summary>
+<article class="page ok" id="beach">
+<header><h3>Beach</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>beach.htm</code></span><span>Replica: <code>heritage/beach.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>51</td><td>38</td></tr><tr><th scope="row">Pictures</th><td>8</td><td>8</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>3</td><td>3</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="coade-stone-pillars">
+<header><h3>Coade Stone Pillars</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>coade stone pillars.htm</code></span><span>Replica: <code>heritage/coade-stone-pillars.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>224</td><td>60</td></tr><tr><th scope="row">Pictures</th><td>9</td><td>9</td></tr><tr><th scope="row">Buttons</th><td>2</td><td>2</td></tr><tr><th scope="row">Links</th><td>3</td><td>3</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="contact">
+<header><h3>Contact</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>contact us.htm</code></span><span>Replica: <code>contact.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>8</td><td>9</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>2</td><td>2</td></tr><tr class=diff><th scope="row">Links</th><td>3</td><td>4</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>Clickable on the replica, plain text on the live page (decision, CHANGELOG section 23): admin@portobelloheritagetrust.co.uk.</li></ul></div></div></div>
+</article><article class="page ok" id="dig-portobello">
+<header><h3>Dig Portobello</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>dig portobello.htm</code></span><span>Replica: <code>events/dig-portobello.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>27</td><td>27</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>2</td><td>2</td></tr><tr><th scope="row">Links</th><td>3</td><td>3</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="entertainment">
+<header><h3>Entertainment</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>entertainment.htm</code></span><span>Replica: <code>heritage/entertainment.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>122</td><td>91</td></tr><tr><th scope="row">Pictures</th><td>8</td><td>8</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="euphemia-tot-addy">
+<header><h3>Euphemia Tot Addy</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>euphemia tot addy.htm</code></span><span>Replica: <code>heritage/euphemia-tot-addy.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>24</td><td>24</td></tr><tr><th scope="row">Pictures</th><td>2</td><td>2</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="events">
+<header><h3>Events</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>events page.htm</code></span><span>Replica: <code>events.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>2</td><td>3</td></tr><tr><th scope="row">Pictures</th><td>12</td><td>12</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>2</td><td>2</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>Page title &quot;Events&quot; (the live page has none; every replica page has a title by decision, CHANGELOG section 23).</li></ul></div></div></div>
+</article><article class="page ok" id="forthcoming-events">
+<header><h3>Forthcoming Events</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>forthcoming events.htm</code></span><span>Replica: <code>events/forthcoming-events.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>0</td><td>1</td></tr><tr><th scope="row">Pictures</th><td>1</td><td>1</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>Page title &quot;Forthcoming Events&quot; (the live page has none; every replica page has a title by decision, CHANGELOG section 23).</li></ul></div></div></div>
+</article><article class="page ok" id="georgian-houses">
+<header><h3>Georgian Houses</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>georgian houses.htm</code></span><span>Replica: <code>heritage/georgian-houses.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>91</td><td>87</td></tr><tr><th scope="row">Pictures</th><td>7</td><td>7</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="golden-days">
+<header><h3>Golden Days</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>golden days.htm</code></span><span>Replica: <code>heritage/golden-days.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>26</td><td>26</td></tr><tr><th scope="row">Pictures</th><td>6</td><td>6</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="hendersons-garage">
+<header><h3>Hendersons Garage</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>hendersons garage.htm</code></span><span>Replica: <code>heritage/hendersons-garage.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>32</td><td>32</td></tr><tr><th scope="row">Pictures</th><td>5</td><td>5</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="heritage">
+<header><h3>Heritage</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>heritage.htm</code></span><span>Replica: <code>heritage.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>1</td><td>1</td></tr><tr><th scope="row">Pictures</th><td>1</td><td>1</td></tr><tr><th scope="row">Buttons</th><td>0</td><td>0</td></tr><tr><th scope="row">Links</th><td>1</td><td>1</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="high-days-and-holidays">
+<header><h3>High Days And Holidays</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>high days and holidays.htm</code></span><span>Replica: <code>heritage/high-days-and-holidays.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>40</td><td>40</td></tr><tr><th scope="row">Pictures</th><td>1</td><td>1</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="index">
+<header><h3>Home</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>index.htm</code></span><span>Replica: <code>index.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>22</td><td>16</td></tr><tr><th scope="row">Pictures</th><td>3</td><td>3</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>4</td><td>4</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="kiln-celebration">
+<header><h3>Kiln Celebration</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>kiln celebration.htm</code></span><span>Replica: <code>events/kiln-celebration.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>24</td><td>23</td></tr><tr><th scope="row">Pictures</th><td>10</td><td>10</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>2</td><td>2</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="links">
+<header><h3>Links</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>links.htm</code></span><span>Replica: <code>links.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>10</td><td>7</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>0</td><td>0</td></tr><tr class=diff><th scope="row">Links</th><td>2</td><td>6</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>Clickable on the replica, plain text on the live page (decision, CHANGELOG section 23): capitalcollections.org.uk, nls.uk, rcahms.gov.uk, scotlandsplaces.gov.uk.</li></ul></div></div></div>
+</article><article class="page ok" id="oral-history">
+<header><h3>Oral History</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>oral history.htm</code></span><span>Replica: <code>heritage/oral-history.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>10</td><td>10</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>2</td><td>2</td></tr><tr><th scope="row">Links</th><td>1</td><td>1</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>10</td><td>10</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="peggy-brown">
+<header><h3>Peggy Brown</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>peggy brown.htm</code></span><span>Replica: <code>heritage/peggy-brown.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>94</td><td>55</td></tr><tr><th scope="row">Pictures</th><td>8</td><td>8</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="pier">
+<header><h3>Pier</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>pier.htm</code></span><span>Replica: <code>heritage/pier.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>52</td><td>50</td></tr><tr><th scope="row">Pictures</th><td>5</td><td>5</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="plaques">
+<header><h3>Plaques</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>plaques.htm</code></span><span>Replica: <code>heritage/plaques.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>2</td><td>2</td></tr><tr class=diff><th scope="row">Pictures</th><td>15</td><td>30</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>The 15 plaque detail panels: on the live page each one opens when you click its plaque; the replica shows them under the thumbnails (CHANGELOG section 4).</li></ul></div></div></div>
+</article><article class="page ok" id="portobello-harbour">
+<header><h3>Portobello Harbour</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>portobello harbour.htm</code></span><span>Replica: <code>heritage/portobello-harbour.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>19</td><td>19</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>5</td><td>5</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="porty-love-stories">
+<header><h3>Porty Love Stories</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>porty love stories.htm</code></span><span>Replica: <code>events/porty-love-stories.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>16</td><td>16</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="pottery-manufacture">
+<header><h3>Pottery Manufacture</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>pottery manufacture.htm</code></span><span>Replica: <code>heritage/pottery-manufacture.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>41</td><td>39</td></tr><tr><th scope="row">Pictures</th><td>2</td><td>2</td></tr><tr><th scope="row">Buttons</th><td>4</td><td>4</td></tr><tr><th scope="row">Links</th><td>6</td><td>6</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="prince-philip">
+<header><h3>Prince Philip</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>prince phillip.htm</code></span><span>Replica: <code>heritage/prince-philip.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>15</td><td>13</td></tr><tr><th scope="row">Pictures</th><td>3</td><td>3</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr class=diff><th scope="row">Links</th><td>2</td><td>3</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>Clickable on the replica, plain text on the live page (decision, CHANGELOG section 23): admin@portobelloheritagetrust.co.uk.</li></ul></div></div></div>
+</article><article class="page ok" id="salt-pans">
+<header><h3>Salt Pans</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>salt pans.htm</code></span><span>Replica: <code>heritage/salt-pans.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>32</td><td>23</td></tr><tr><th scope="row">Pictures</th><td>9</td><td>9</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>4</td><td>4</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="sir-peter-heatly">
+<header><h3>Sir Peter Heatly</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>sir peter heatly.htm</code></span><span>Replica: <code>heritage/sir-peter-heatly.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>22</td><td>21</td></tr><tr><th scope="row">Pictures</th><td>4</td><td>4</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="terms">
+<header><h3>Terms</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>terms.htm</code></span><span>Replica: <code>terms.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr><th scope="row">Sentences</th><td>15</td><td>15</td></tr><tr><th scope="row">Pictures</th><td>0</td><td>0</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p></div></div>
+</article><article class="page ok" id="william-leatham">
+<header><h3>William Leatham</h3><span class="pill good">Matches</span></header>
+<p class="files"><span>Live: <code>william leatham.htm</code></span><span>Replica: <code>heritage/william-leatham.html</code></span></p>
+<div class="body"><table class="counts"><thead><tr><th></th><th>Live</th><th>Replica</th></tr></thead><tbody><tr class=diff><th scope="row">Sentences</th><td>0</td><td>1</td></tr><tr><th scope="row">Pictures</th><td>4</td><td>4</td></tr><tr><th scope="row">Buttons</th><td>1</td><td>1</td></tr><tr><th scope="row">Links</th><td>2</td><td>2</td></tr><tr><th scope="row">Galleries</th><td>0</td><td>0</td></tr><tr><th scope="row">Videos</th><td>0</td><td>0</td></tr></tbody></table><div class="diffs"><p class="none">Text, pictures, buttons, links, galleries and videos all match.</p><div class="intended-note"><b>Intended difference</b><ul><li>Page title &quot;William Leatham Policeman&quot; (the live page has none; every replica page has a title by decision, CHANGELOG section 23).</li></ul></div></div></div>
+</article>
+</details>
+</div>

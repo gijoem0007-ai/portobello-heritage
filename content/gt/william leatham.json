@@ -1,0 +1,63 @@
+{
+ "file": "william leatham.htm",
+ "variant": "desktop (desktop text=0 imgs=4; mobile text=0 imgs=5)",
+ "title": "Portobello Heritage Trust, helen hopkirk",
+ "blocks": [
+  {
+   "type": "img",
+   "src": "index_htm_files/40348.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 318.0,
+   "left": 59.0,
+   "w": 642.0,
+   "h": 917.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40349.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 1199.0,
+   "left": 57.0,
+   "w": 647.0,
+   "h": 774.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40350.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 1973.0,
+   "left": 57.0,
+   "w": 646.0,
+   "h": 850.0
+  },
+  {
+   "type": "img",
+   "src": "index_htm_files/40351.jpg",
+   "alt": "",
+   "rollover": false,
+   "top": 2823.0,
+   "left": 55.0,
+   "w": 648.0,
+   "h": 511.0
+  },
+  {
+   "type": "button",
+   "href": "heritage.htm",
+   "label": "Back to Heritage Page",
+   "top": 3376.0,
+   "left": 247.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm"
+ ]
+}

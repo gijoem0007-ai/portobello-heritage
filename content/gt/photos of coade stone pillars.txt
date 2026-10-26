@@ -1,0 +1,55 @@
+# photos of coade stone pillars.htm | title=Portobello Heritage Trust, E,coade stone pillars,photos
+
+--- text @top=299 left=72
+Hover over each Photo to see description.
+
+[IMG index_htm_files/40731.png @top=354 left=57 168.0x134.0] alt='The Restored Coade Stone Pillars'
+
+[IMG index_htm_files/40732.jpg @top=360 left=242 155.0x123.0] alt='The Derelict Paddling Pool in 2005.'
+
+[IMG index_htm_files/40735.png @top=504 left=57 168.0x134.0] alt='The pillar sections in Council storage.'
+
+[IMG index_htm_files/40736.jpg @top=510 left=242 155.0x123.0] alt='The paddling pool having been demolished.'
+
+[IMG index_htm_files/40742.png @top=651 left=57 168.0x134.0] alt='Taking the mould off a new rose and crown quadrant to complete a circle.'
+
+[IMG index_htm_files/40747.png @top=651 left=235 168.0x134.0] alt='The structural supports inside the pillars.'
+
+[IMG index_htm_files/40743.png @top=803 left=57 168.0x135.0] alt='The circle for the pillars.'
+
+[IMG index_htm_files/40744.png @top=803 left=235 168.0x135.0] alt='The bases for the pillars being put in.'
+
+[IMG index_htm_files/40737.png @top=954 left=56 168.0x134.0] alt='The garden having been planted in 2006.'
+
+[IMG index_htm_files/40738.png @top=954 left=235 168.0x134.0] alt='A close up of some of the chimneys at Dalmeny House.'
+
+[IMG index_htm_files/40748.png @top=1100 left=57 168.0x135.0] alt='Part of one of the crown tops being lifted into the garden.'
+
+[IMG index_htm_files/40746.png @top=1100 left=235 168.0x135.0] alt='The pillars under construction.'
+
+[IMG index_htm_files/40739.png @top=1269 left=44 116.0x166.0] alt='Fleur de lys quadrants after cleaning.'
+
+[IMG index_htm_files/40740.png @top=1269 left=183 113.0x163.0] alt='Lion quadrants after cleaning.'
+
+[IMG index_htm_files/40741.png @top=1269 left=314 113.0x163.0] alt='Rose and crown quadrants after cleaning.'
+
+[IMG index_htm_files/40733.png @top=1452 left=44 116.0x161.0] alt='One of the pillars at Argyle House before it was painted.'
+
+[IMG index_htm_files/40734.png @top=1452 left=180 118.0x161.0] alt='The same pillar at Argyle House having been painted grey.'
+
+[IMG index_htm_files/40749.png @top=1452 left=314 113.0x163.0] alt='The fleur de lys pillar being constructed.'
+
+[IMG index_htm_files/40750.png @top=1626 left=47 113.0x163.0] alt='The larger pillar with its new crown top.'
+
+[IMG index_htm_files/40745.png @top=1626 left=314 113.0x163.0] alt='A conservator working on one of the smaller pillars.'
+
+[BUTTON 'Back to Heritage Page' -> heritage.htm @top=1893]
+
+## LINKS
+https://jtmwebsites.uk/
+index.htm
+heritage.htm
+events page.htm
+links.htm
+contact us.htm
+terms.htm

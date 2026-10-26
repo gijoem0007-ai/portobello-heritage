@@ -1,0 +1,16 @@
+{
+ "_about": "Hand-kept list (not made by any import): moments in the Oral History video essays shown as 'Hear it remembered' buttons on heritage pages. page = heritage page slug; chapter = number at the start of the chapter title on the Oral History page; start = seconds into that chapter's VIDEO essay (from its subtitle file, a second or two early); quote = Isa's own words.",
+ "speaker": "Isa Dean",
+ "clips": [
+  {"page": "pottery-manufacture", "chapter": "01", "start": 72,
+   "quote": "My father was working in the pottery, and my mother went into working the pottery too."},
+  {"page": "pottery-manufacture", "chapter": "01", "start": 114,
+   "quote": "I was all over it, I can tell you every place in it."},
+  {"page": "entertainment", "chapter": "02", "start": 310,
+   "quote": "My mother was very keen on the live theatre… we used to imitate the pierrots that was on the sand."},
+  {"page": "beach", "chapter": "05", "start": 74,
+   "quote": "I played on the beach because there was a cluster of rocks… and we'd play shops."},
+  {"page": "beach", "chapter": "01", "start": 218,
+   "quote": "I went along the beach with my wee axe and if the wood was big, I used to chop it."}
+ ]
+}

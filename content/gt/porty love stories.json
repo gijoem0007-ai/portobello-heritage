@@ -1,0 +1,32 @@
+{
+ "file": "porty love stories.htm",
+ "variant": "desktop (desktop text=1929 imgs=0; mobile text=1928 imgs=1)",
+ "title": "Portobello Heritage Trust, porty love stories",
+ "blocks": [
+  {
+   "type": "text",
+   "top": 279.0,
+   "left": 33.0,
+   "paras": [
+    "Portobello Love Stories",
+    "A most enjoyable and very successful reminiscence event was held in Bellfield on Saturday, 10th February, for some of the older members of our community. It was decided to call the event Portobello Love Stories, as Valentine’s Day was fast approaching, and a red and white theme was used to decorate the tables. Afternoon tea was provided for around 60 guests, with volunteers producing many delicious home-bakes. The event was sponsored by Action Porty, Portobello Heritage Trust and Tribe Porty Youth Theatre. Members of Portobello Older Peoples Project and residents of Spring Gardens Care Home, with their carers and helpers, and members of the congregation from the former Portobello Old Parish Church were invited along to reminisce about their lives. Tamarin Fountain sang songs from the 40s, 50s and 60s and many sang along, with occasional spontaneous dancing. An illustrated slide-show of a day-trip to Portobello was given by Dr Margaret Munro of Portobello Heritage Trust. This helped trigger many happy memories of days spent on Portobello beach. Memory boxes on loan from the Living Memory Association proved very popular, providing articles to handle and discuss around various themes, including school days, days out and shopping. Members of the youth theatre helped serve afternoon tea, with older volunteers pouring the hot drinks. Then, note- books and pens in hand, the youngsters spoke to their guests about their reminiscences. There was a buzz in the hall as different generations chatted and laughed about the stories that were being shared. The youngsters were later ‘de- briefed’ and recorded the stories they had been told and their own thoughts on the day. Everyone agreed it had been a most successful event, with new memories created, providing something to talk about in the days ahead. We would like to thank everyone who gave their time to help make this a day to remember."
+   ]
+  },
+  {
+   "type": "button",
+   "href": "events%20page.htm",
+   "label": "Back to Events Page",
+   "top": 856.0,
+   "left": 259.0
+  }
+ ],
+ "links": [
+  "https://jtmwebsites.uk/",
+  "index.htm",
+  "heritage.htm",
+  "events%20page.htm",
+  "links.htm",
+  "contact%20us.htm",
+  "terms.htm"
+ ]
+}
