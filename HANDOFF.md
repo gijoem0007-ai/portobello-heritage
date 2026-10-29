@@ -34,8 +34,6 @@ Joe to check.
 - 26 Oct 2026: put under git + GitHub; CLAUDE.md written.
 
 ## Next
-- (unconfirmed) Nothing is recorded as pending. Joe to say what's next, e.g. new events,
-  content from the committee, or moving other Xara sites over the same way.
 
 ## Open questions for Joe
 - Any changes or fixes waiting since go-live?
