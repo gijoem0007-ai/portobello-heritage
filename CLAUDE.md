@@ -21,6 +21,14 @@ SiteGround. Worked on from two machines (desktop and laptop).
 - Preview: http://192.168.4.226:8780/ at home.
 - After changes, check BUILD-STATUS.md shows 0 broken links.
 
+## End of every session
+- Update HANDOFF.md (done, decided, next, open questions, newest-first log line).
+- Then refresh the wiki status page `N:\LLM Wiki\projects\portobello-heritage.md`:
+  copy HANDOFF.md into its Details section, set "**Last updated: YYYY-MM-DD**" at the
+  top to today (plus the last work session's date), rewrite the 2-4 sentence Summary,
+  and add a dated Sources line. Follow `N:\LLM Wiki\schema.md`.
+  (Joe asked for this on 2026-10-29 for a project dashboard.)
+
 ## Publishing
 - Uploading to SiteGround changes the live site: show Joe what will
   change and get a yes first.
