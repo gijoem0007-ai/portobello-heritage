@@ -21,7 +21,8 @@ Joe to check.
 - Migrated from Xara Web Designer to HTML (Joe, 2026-10-29).
 - Live on SiteGround since 14 Oct 2026 (from the wiki page `portobello/heritage-trust.md`).
 - Last build: 2026-10-14 18:44, 36 pages, 0 broken links or images.
-- Git: 2 commits, both 2026-10-26. Working tree clean and in step with GitHub (checked 2026-10-29).
+- Git: the site itself was committed on 2026-10-26; later commits (2026-10-29) only touch this
+  HANDOFF.md and CLAUDE.md. Working tree clean and in step with GitHub (checked 2026-10-29).
 - Newest site files (`build.py`, the HTML pages, `release\`, `tools\`) are dated 14 Oct 2026,
   so that was the last real work on the site itself. The 26 Oct commits only put that work under git.
 - (unconfirmed) That what's on SiteGround matches this folder exactly. The first commit says
@@ -40,6 +41,8 @@ Joe to check.
 - Has the site been uploaded again since 14 Oct?
 
 ## Log (newest first)
+- 2026-10-29 laptop: tidy: the git line under "Current state" said "2 commits", out of date after today's
+  handoff commits.
 - 2026-10-29 laptop: wording fix (Joe): the Xara -> HTML migration is finished, not in progress.
 - 2026-10-29 laptop: added the Xara -> hand-written HTML migration line (Joe). "Next" left empty
   until Joe confirms the pending items Claude suggested in chat.
