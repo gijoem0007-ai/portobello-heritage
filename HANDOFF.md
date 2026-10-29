@@ -18,8 +18,7 @@ Joe to check.
 - Git: this folder, backed up to https://github.com/gijoem0007-ai/portobello-heritage (private).
 
 ## Current state
-- Being migrated from Xara Web Designer to hand-written HTML (Joe, 2026-10-29). "Current state"
-  below describes that migration as it stands.
+- Migrated from Xara Web Designer to HTML (Joe, 2026-10-29).
 - Live on SiteGround since 14 Oct 2026 (from the wiki page `portobello/heritage-trust.md`).
 - Last build: 2026-10-14 18:44, 36 pages, 0 broken links or images.
 - Git: 2 commits, both 2026-10-26. Working tree clean and in step with GitHub (checked 2026-10-29).
@@ -43,6 +42,7 @@ Joe to check.
 - Has the site been uploaded again since 14 Oct?
 
 ## Log (newest first)
+- 2026-10-29 laptop: wording fix (Joe): the Xara -> HTML migration is finished, not in progress.
 - 2026-10-29 laptop: added the Xara -> hand-written HTML migration line (Joe). "Next" left empty
   until Joe confirms the pending items Claude suggested in chat.
 - 2026-10-29 laptop: HANDOFF.md created from git history (no site changes). Wiki status page
