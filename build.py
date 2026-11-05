@@ -613,6 +613,8 @@ def events_sidebar(d):
 # Each chapter has a "Video Essay" and an "Audio File" button that open a YouTube player in a pop-up.
 # Chapters, video ids and button artwork come from content/extras/oral-history.json (written by the
 # import step, tools/xara_extras.py). To add a chapter, add it to that file.
+# Chapters 06 onward (Isa Dean Tape 2, Nov 2026) were added by hand after the Xara site was retired, so
+# don't re-run tools/xara_extras.py: it would rewrite the file with only the five Xara chapters.
 def load_extras(name):
     with open(os.path.join(ROOT, "content", "extras", name + ".json"), encoding="utf-8") as f:
         return json.load(f)
@@ -679,7 +681,8 @@ def oral_history_body(d):
     paras = [clean(p) for b in load_gt("oral history")["blocks"] if b["type"] == "text" for p in b["paras"]]
     title, intro, speaker, chapter_titles = paras[0], paras[1], paras[2], paras[3:]
     oral_history = [(c["title"], c["video"], c["audio"]) for c in extras["chapters"]]
-    assert [c for c, _, _ in oral_history] == chapter_titles, (chapter_titles, "chapter list vs page text mismatch")
+    # the Xara page text lists chapters 01-05; later chapters exist only in oral-history.json
+    assert [c for c, _, _ in oral_history][:len(chapter_titles)] == chapter_titles, (chapter_titles, "chapter list vs page text mismatch")
     for c in oral_history:
         print("  [oral history]", c)
 
