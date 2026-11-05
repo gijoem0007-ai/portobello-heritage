@@ -4,8 +4,8 @@
 
 
 ## Last updated
-2026-11-05 (desktop). Oral History page: Isa Dean Tape 2 (Episodes 06-14) added, committed and
-pushed; not yet uploaded to SiteGround. Earlier sections reconstructed 2026-10-29 from git history;
+2026-11-05 (desktop). Oral History page: Isa Dean Tape 2 (Episodes 06-14) added and uploaded to
+SiteGround over SSH; cache flush pending. Earlier sections reconstructed 2026-10-29 from git history;
 anything marked (unconfirmed) needs Joe to check.
 
 ## What the site is
@@ -17,6 +17,17 @@ anything marked (unconfirmed) needs Joe to check.
 - Preview: http://192.168.4.226:8780/ at home (or the Tailscale address in BUILD-STATUS.md).
 - Git: this folder, backed up to https://github.com/gijoem0007-ai/portobello-heritage (private).
 
+## How to upload (SSH, set up 2026-11-05)
+- Host ssh.portobelloheritagetrust.co.uk, port 18765, user u1082-bzf6u63zujuu.
+- Desktop key: `~/.ssh/siteground_portobellolegacy` (same key as the Legacy site), imported in PHT
+  Site Tools > Devs > SSH Keys Manager as "claude-desktop". Laptop: not set up yet.
+- Live site folder: `www/portobelloheritagetrust.co.uk/public_html`. Staging copy:
+  `www/new.portobelloheritagetrust.co.uk/public_html`.
+- Build with `python tools\make_release.py live`, then copy only the changed files from `release\live\`.
+  Before replacing a file, copy it on the server to `<name>.bak-YYYYMMDD`; after upload, check the
+  md5sum matches the NAS copy. Upload only with Joe's yes.
+- Then flush SiteGround's Dynamic Cache, or the bare domain keeps serving the old page.
+
 ## Current state
 - Migrated from Xara Web Designer to HTML (Joe, 2026-10-29).
 - Live on SiteGround since 14 Oct 2026 (from the wiki page `portobello/heritage-trust.md`).
@@ -24,7 +35,7 @@ anything marked (unconfirmed) needs Joe to check.
 - Oral History page (`heritage/oral-history.html`): 14 chapters as of 2026-11-05. Chapters come from
   `content\extras\oral-history.json` (title + video id + audio id). 01-05 = Isa Dean Tape 1;
   06-14 = Tape 2, added by hand (don't re-run `tools\xara_extras.py`, it would drop them).
-  This change is in git and on the NAS preview, NOT yet on the live site.
+  Live on SiteGround since 2026-11-05 (cache flush pending for the bare domain).
 - Git: the site itself was committed on 2026-10-26; later commits (2026-10-29) only touch this
   HANDOFF.md and CLAUDE.md. Working tree clean and in step with GitHub (checked 2026-10-29).
 - Newest site files (`build.py`, the HTML pages, `release\`, `tools\`) are dated 14 Oct 2026,
@@ -41,17 +52,21 @@ anything marked (unconfirmed) needs Joe to check.
   NAS preview (Episode 14 audio plays in the pop-up); all 18 new YouTube ids allow embedding.
 
 ## Next
-- Joe to upload to SiteGround so Tape 2 goes live. Release built 2026-11-05 (`release\live\` and
-  `release\pht-website-live.zip`). Versus the 14 Oct release only two files differ:
-  `release\live\heritage\oral-history.html` (the Tape 2 change - upload this to `heritage/` on the
-  server, replacing the old one) and `sitemap.xml` (only every page's date bumped; optional).
-  After upload, check https://www.portobelloheritagetrust.co.uk/heritage/oral-history.html shows 14 chapters.
+- Joe: flush SiteGround's cache (Site Tools > Speed > Caching > Dynamic Cache > Flush). After the
+  2026-11-05 upload, the www addresses show the new Oral History page (14 chapters) but the bare
+  portobelloheritagetrust.co.uk still served the cached old one (5 chapters). Then re-check all four.
+- Optional: upload `release\live\sitemap.xml` (only the dates changed).
+- Laptop: needs its own key imported in PHT Site Tools > Devs > SSH Keys Manager before it can upload.
 
 ## Open questions for Joe
 - Any changes or fixes waiting since go-live?
 - Has the site been uploaded again since 14 Oct?
 
 ## Log (newest first)
+- 2026-11-05 desktop: SSH set up for the PHT site (Joe imported the desktop key). Live
+  heritage/oral-history.html matched the 14 Oct release; backed up on the server as
+  oral-history.html.bak-20261105, new page uploaded (md5 matches). www addresses show 14 chapters and
+  Episode 06 audio plays; bare domain still cached (5 chapters) until Joe flushes the cache.
 - 2026-11-05 desktop: built the live release (`make_release.py live`); only oral-history.html and
   sitemap.xml differ from 14 Oct. Waiting on Joe to upload it to SiteGround.
 - 2026-11-05 desktop: added Isa Dean Tape 2 (Episodes 06-14, video + audio each) to the Oral History
