@@ -41,15 +41,19 @@ anything marked (unconfirmed) needs Joe to check.
   NAS preview (Episode 14 audio plays in the pop-up); all 18 new YouTube ids allow embedding.
 
 ## Next
-- Upload to SiteGround so Tape 2 goes live (Joe's yes needed): `python tools\make_release.py live`,
-  then upload. Only `heritage/oral-history.html` changed since 14 Oct, so uploading just that file
-  is enough if the live site otherwise matches this folder.
+- Joe to upload to SiteGround so Tape 2 goes live. Release built 2026-11-05 (`release\live\` and
+  `release\pht-website-live.zip`). Versus the 14 Oct release only two files differ:
+  `release\live\heritage\oral-history.html` (the Tape 2 change - upload this to `heritage/` on the
+  server, replacing the old one) and `sitemap.xml` (only every page's date bumped; optional).
+  After upload, check https://www.portobelloheritagetrust.co.uk/heritage/oral-history.html shows 14 chapters.
 
 ## Open questions for Joe
 - Any changes or fixes waiting since go-live?
 - Has the site been uploaded again since 14 Oct?
 
 ## Log (newest first)
+- 2026-11-05 desktop: built the live release (`make_release.py live`); only oral-history.html and
+  sitemap.xml differ from 14 Oct. Waiting on Joe to upload it to SiteGround.
 - 2026-11-05 desktop: added Isa Dean Tape 2 (Episodes 06-14, video + audio each) to the Oral History
   page; build check relaxed so only chapters 01-05 must match the old Xara text. Commit dfe83a9, pushed.
   Waiting on Joe's yes to upload to SiteGround.
