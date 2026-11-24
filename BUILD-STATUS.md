@@ -2,7 +2,7 @@
 
 **OK**: the site was rebuilt and every link and picture checks out.
 
-- Last build: 2026-11-05 17:44:39 (took 1 s)
+- Last build: 2026-11-24 15:58:37 (took 1 s)
 - Why: source files changed
 - Pages written: 36
 - Link check: 36 pages, 652 image references (294 src + 358 srcset), 1071 local links, 0 broken
