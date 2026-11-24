@@ -5,7 +5,7 @@
 
 ## Last updated
 2026-11-24 (desktop). Chapter 05 (Isa Dean Ep 05) now points at the corrected v2 YouTube upload
-`AI0yKpQs4eA` (Oral History page + Beach page clip). Committed 6a85efb and pushed; uploaded to SiteGround 2026-11-24 (md5 matches); waiting on Joe's cache flush.
+`AI0yKpQs4eA` (Oral History page + Beach page clip). Committed 6a85efb and pushed; live on SiteGround since 2026-11-24 (checked after Joe's cache flush).
 Before that: 2026-11-05, Isa Dean Tape 2 (Episodes 06-14) added and uploaded over SSH. Earlier sections reconstructed 2026-10-29 from git history;
 anything marked (unconfirmed) needs Joe to check.
 
@@ -53,7 +53,6 @@ anything marked (unconfirmed) needs Joe to check.
   NAS preview (Episode 14 audio plays in the pop-up); all 18 new YouTube ids allow embedding.
 
 ## Next
-- Joe: flush SiteGround's Dynamic Cache, then check all four addresses show `AI0yKpQs4eA`.
 - Optional: upload `release\live\sitemap.xml` (only the dates changed).
 - Laptop: needs its own key imported in PHT Site Tools > Devs > SSH Keys Manager before it can upload.
 
@@ -62,6 +61,9 @@ anything marked (unconfirmed) needs Joe to check.
 - Has the site been uploaded again since 14 Oct?
 
 ## Log (newest first)
+- 2026-11-24 desktop: Joe's first flush didn't reach the PHT site; the second did. Server now returns the new
+  pages (AI0yKpQs4eA, no FeSR1T1RgzU) at https with and without www; chapter 05 plays the new video with
+  subtitles. A browser that visited earlier may need a hard refresh (Ctrl+F5).
 - 2026-11-24 desktop: old Ep 05 video FeSR1T1RgzU already deleted on YouTube, but SiteGround's cache still
   served the old pages, so visitors got "video unavailable". Server files are new: bypassing the cache
   (`?check=...`) the chapter 05 button plays AI0yKpQs4eA with subtitles. Waiting on Joe to flush the
