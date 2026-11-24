@@ -5,7 +5,7 @@
 
 ## Last updated
 2026-11-24 (desktop). Chapter 05 (Isa Dean Ep 05) now points at the corrected v2 YouTube upload
-`AI0yKpQs4eA` (Oral History page + Beach page clip). Committed 6a85efb and pushed; NOT yet uploaded to SiteGround.
+`AI0yKpQs4eA` (Oral History page + Beach page clip). Committed 6a85efb and pushed; uploaded to SiteGround 2026-11-24 (md5 matches); waiting on Joe's cache flush.
 Before that: 2026-11-05, Isa Dean Tape 2 (Episodes 06-14) added and uploaded over SSH. Earlier sections reconstructed 2026-10-29 from git history;
 anything marked (unconfirmed) needs Joe to check.
 
@@ -53,9 +53,8 @@ anything marked (unconfirmed) needs Joe to check.
   NAS preview (Episode 14 audio plays in the pop-up); all 18 new YouTube ids allow embedding.
 
 ## Next
-- Upload the Ep 05 change to SiteGround (with Joe's yes): `make_release.py live`, then only
-  `heritage/oral-history.html` and `heritage/beach.html` should differ; back up, upload, md5 check, flush cache.
-- After it's live: Joe deletes (or sets Private) the old Ep 05 YouTube video `FeSR1T1RgzU`.
+- Joe: flush SiteGround's Dynamic Cache, then check all four addresses show `AI0yKpQs4eA`.
+- After that: Joe deletes (or sets Private) the old Ep 05 YouTube video `FeSR1T1RgzU`.
 - Optional: upload `release\live\sitemap.xml` (only the dates changed).
 - Laptop: needs its own key imported in PHT Site Tools > Devs > SSH Keys Manager before it can upload.
 
@@ -64,6 +63,10 @@ anything marked (unconfirmed) needs Joe to check.
 - Has the site been uploaded again since 14 Oct?
 
 ## Log (newest first)
+- 2026-11-24 desktop: with Joe's yes, uploaded heritage/oral-history.html and heritage/beach.html (Ep 05 id
+  swap). Live copies first confirmed identical apart from the video id, then backed up on the server as
+  *.bak-20261124; md5 of uploads matches release\live. All four addresses still served the old pages from
+  SiteGround's cache: waiting on Joe to flush it.
 - 2026-11-24 desktop: Isa Dean Episode 05 re-made with Lisa's corrections (new pictures + fixed subtitles;
   see `Audio Files\Isa Deans 01\Episode 05\HANDOFF.md`) and uploaded by Joe to YouTube as `AI0yKpQs4eA`.
   Chapter 05 video id changed in `content\extras\oral-history.json` (the Beach page clip follows it; its
