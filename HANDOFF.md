@@ -4,10 +4,10 @@
 
 
 ## Last updated
-2026-11-24 (desktop). Chapter 05 (Isa Dean Ep 05) now points at the corrected v2 YouTube upload
+2026-11-25 (desktop): notes tidied with Joe; no site changes. The site is stable: nothing waiting.
+Last site change 2026-11-24: chapter 05 (Isa Dean Ep 05) now points at the corrected v2 YouTube upload
 `AI0yKpQs4eA` (Oral History page + Beach page clip). Committed 6a85efb and pushed; live on SiteGround since 2026-11-24 (checked after Joe's cache flush).
-Before that: 2026-11-05, Isa Dean Tape 2 (Episodes 06-14) added and uploaded over SSH. Earlier sections reconstructed 2026-10-29 from git history;
-anything marked (unconfirmed) needs Joe to check.
+Before that: 2026-11-05, Isa Dean Tape 2 (Episodes 06-14) added and uploaded over SSH.
 
 ## What the site is
 - The Portobello Heritage Trust website (portobelloheritagetrust.co.uk). Joe is the
@@ -21,7 +21,10 @@ anything marked (unconfirmed) needs Joe to check.
 ## How to upload (SSH, set up 2026-11-05)
 - Host ssh.portobelloheritagetrust.co.uk, port 18765, user u1082-bzf6u63zujuu.
 - Desktop key: `~/.ssh/siteground_portobellolegacy` (same key as the Legacy site), imported in PHT
-  Site Tools > Devs > SSH Keys Manager as "claude-desktop". Laptop: not set up yet.
+  Site Tools > Devs > SSH Keys Manager as "claude-desktop".
+- Note (not a to-do): Claude Code does the uploads, from the desktop. The laptop has no key, so a
+  Claude Code session on the laptop can't upload; do uploads from the desktop. Only if Joe ever wants
+  laptop uploads would he import a laptop key in the same SSH Keys Manager.
 - Live site folder: `www/portobelloheritagetrust.co.uk/public_html`. Staging copy:
   `www/new.portobelloheritagetrust.co.uk/public_html`.
 - Build with `python tools\make_release.py live`, then copy only the changed files from `release\live\`.
@@ -37,12 +40,10 @@ anything marked (unconfirmed) needs Joe to check.
   `content\extras\oral-history.json` (title + video id + audio id). 01-05 = Isa Dean Tape 1;
   06-14 = Tape 2, added by hand (don't re-run `tools\xara_extras.py`, it would drop them).
   Live on SiteGround since 2026-11-05; all four addresses checked after the cache flush.
-- Git: the site itself was committed on 2026-10-26; later commits (2026-10-29) only touch this
-  HANDOFF.md and CLAUDE.md. Working tree clean and in step with GitHub (checked 2026-10-29).
-- Newest site files (`build.py`, the HTML pages, `release\`, `tools\`) are dated 14 Oct 2026,
-  so that was the last real work on the site itself. The 26 Oct commits only put that work under git.
-- (unconfirmed) That what's on SiteGround matches this folder exactly. The first commit says
-  "site as uploaded to SiteGround", but nothing here records an upload since.
+- Chapter 05 and the Beach page clip use the corrected Ep 05 video `AI0yKpQs4eA` (since 2026-11-24).
+- Git: working tree clean and in step with GitHub (checked 2026-11-25).
+- Uploads since go-live: 2026-11-05 (Oral History page) and 2026-11-24 (Oral History + Beach pages),
+  each time only the changed pages, checked by md5 after upload.
 
 ## Done
 - Sept-Oct 2026: site rebuilt from the Xara source on the NAS (via `content\gt\` text extracts
@@ -51,16 +52,20 @@ anything marked (unconfirmed) needs Joe to check.
 - 26 Oct 2026: put under git + GitHub; CLAUDE.md written.
 - 5 Nov 2026: Oral History page: added Isa Dean Tape 2, Episodes 06-14 (commit dfe83a9). Checked on the
   NAS preview (Episode 14 audio plays in the pop-up); all 18 new YouTube ids allow embedding.
+- 24 Nov 2026: chapter 05 + Beach page clip switched to the corrected Ep 05 video; uploaded and live.
 
 ## Next
-- Optional: upload `release\live\sitemap.xml` (only the dates changed).
-- Laptop: needs its own key imported in PHT Site Tools > Devs > SSH Keys Manager before it can upload.
+- Nothing waiting. The site is stable; new work comes from the Oral History project (new chapters).
+- Whenever pages are next uploaded, send `release\live\sitemap.xml` too (only its dates changed; not worth
+  an upload on its own).
 
 ## Open questions for Joe
-- Any changes or fixes waiting since go-live?
-- Has the site been uploaded again since 14 Oct?
+- None.
 
 ## Log (newest first)
+- 2026-11-25 desktop: notes tidied with Joe, no site changes. The laptop SSH key is now a note under
+  "How to upload", not a to-do (Claude Code uploads from the desktop); answered the old open questions
+  (uploads since go-live were 5 and 24 Nov); sitemap folded into the next upload.
 - 2026-11-24 desktop: Joe's first flush didn't reach the PHT site; the second did. Server now returns the new
   pages (AI0yKpQs4eA, no FeSR1T1RgzU) at https with and without www; chapter 05 plays the new video with
   subtitles. A browser that visited earlier may need a hard refresh (Ctrl+F5).
